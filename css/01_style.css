@@ -1,0 +1,114 @@
+@font-face {
+  font-family: W3;
+  src:url(../word_type/W3.ttf);
+}
+body{
+	background: #000 url(../picture/01.jpg) center center no-repeat;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+article{
+	width:90%;
+	padding-left:5.5%;
+	padding-right:5%;
+}
+h1{
+	font-size: 50px;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
+	margin-top: 66px;
+}
+p{
+	font-size: 26px;
+	font-family: 微軟正黑體;
+	clear : left;
+}
+ul{
+	font-size: 22px;
+	font-family: 微軟正黑體;
+	clear : left;
+}
+ol{
+	font-size: 22px;
+	font-family: 微軟正黑體;
+	clear : left;
+}
+figure{
+	font-family: 微軟正黑體;
+	font-size: 20px;
+}
+
+.context_center{
+	padding-left: 2%;
+	text-align: center;
+	width:28%;
+	background-color: #FFBBFF;
+}
+
+/*內容有問號的句子*/
+.question{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #c71585;
+	font-weight: bold;
+}
+
+/*任何元件距離下邊界*/
+.last_line{
+	margin-bottom: 70px;
+}
+
+/*置中位置*/
+.middle_line{
+	text-align: center;
+	clear : left;
+}
+
+/*圖片名稱*/
+.pic_name{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: #00DD00;
+}
+
+/*圖片描述距離下邊界*/
+.pic_dis{
+	font-size: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+/*部分圖片距離左邊界*/
+.pic_part{
+	margin-left: 13.5%;
+}
+/*部分描述距離下界*/
+.dis_bottom{
+	padding-bottom: 15px;
+}
+
+/*div與div的排列方式*/
+.abreast{
+	padding-right:2%;
+	float:left;
+	display: inline;
+}
+
+/*圖片大小*/
+.pic_size_01{
+	width: 400px;
+    height: 300px;
+}
+.pic_size_02{
+	width: 350px;
+    height: 250px;
+}
+.pic_size_03{
+	width: 250px;
+    height: 300px;
+}
+
+
