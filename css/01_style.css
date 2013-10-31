@@ -1,6 +1,7 @@
-@font-face {
-  font-family: W3;
-  src:url(../word_type/W3.ttf);
+header {
+	margin: 0px auto;
+	padding-top: 12px;
+	width:90%;
 }
 body{
 	background: #000 url(../picture/01.jpg) center center no-repeat;
@@ -13,33 +14,49 @@ article{
 	padding-right:5%;
 }
 h1{
-	font-size: 50px;
+	font-size: 55px;
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
 	margin-top: 66px;
+	padding-bottom: 40px;
 }
 p{
-	font-size: 26px;
+	font-size: 24px;
 	font-family: 微軟正黑體;
 	clear : left;
+	line-height: 33px;
+	padding: 10px;
+	padding-left: 0px;
 }
 ul{
 	font-size: 22px;
 	font-family: 微軟正黑體;
 	clear : left;
+	margin-left: 20px;
 }
 ol{
 	font-size: 22px;
 	font-family: 微軟正黑體;
 	clear : left;
+	margin: 15px;
+	margin-left: 3%;
+}
+li{
+	line-height: 160%;
 }
 figure{
 	font-family: 微軟正黑體;
 	font-size: 20px;
+	line-height: 23px;
 }
-
+figcaption{
+	margin-top: 10px;
+}
+.list_type{
+	list-style-type: decimal;
+}
 .context_center{
 	padding-left: 2%;
 	text-align: center;
@@ -49,15 +66,13 @@ figure{
 
 /*內容有問號的句子*/
 .question{
-	margin-top: 20px;
-	margin-bottom: 20px;
 	color: #c71585;
 	font-weight: bold;
 }
 
 /*任何元件距離下邊界*/
 .last_line{
-	margin-bottom: 70px;
+	margin-bottom: 80px;
 }
 
 /*置中位置*/
@@ -85,6 +100,7 @@ figure{
 .pic_part{
 	margin-left: 13.5%;
 }
+
 /*部分描述距離下界*/
 .dis_bottom{
 	padding-bottom: 15px;
@@ -95,6 +111,9 @@ figure{
 	padding-right:2%;
 	float:left;
 	display: inline;
+}
+.abreast-01{
+	padding:2%;
 }
 
 /*圖片大小*/

@@ -1,6 +1,7 @@
-@font-face {
-  font-family: W3;
-  src:url(../word_type/W3.ttf);
+header {
+	margin: 0px auto;
+	padding-top: 12px;
+	width:90%;
 }
 body{
 	background: #000 url(../picture/03.jpg) center center no-repeat;
@@ -20,25 +21,23 @@ h1{
 	text-align: center;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
 	margin-top: 66px;
+	padding-bottom: 40px;
 }
 p{
-	font-size: 24px;
+	font-size: 26px;
 	font-family: 微軟正黑體;
 	clear : left;
+	line-height: 33px;
+	padding-top: 22px;
 }
-ul{
-	font-size: 22px;
-	font-family: 微軟正黑體;
-	clear : left;
-}
-ol{
-	font-size: 22px;
-	font-family: 微軟正黑體;
-	clear : left;
-}
+
 figure{
 	font-family: 微軟正黑體;
-	padding-bottom: 2%;
+	font-size: 20px;
+	margin: 20px;
+}
+figcaption{
+	margin-top: 10px;
 }
 
 .context_center{
@@ -47,6 +46,7 @@ figure{
 	text-align: center;
 	width: 45%;
 	background-color: #EED5B7;
+	line-height: 30px;
 }
 
 /*內容有問號的句子*/
@@ -59,17 +59,18 @@ figure{
 
 /*內容某些句子樣式*/
 .emphasis{
-	font-size: 20pt;
+	font-size: 22pt;
 	font-weight: bold;
 	text-decoration: underline;
 	text-align: center;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
 	color: #da70d6;
+	padding: 30px;
 }
 
 /*任何元件距離下邊界*/
 .last_line{
-	margin-bottom: 150px;
+	margin-bottom: 160px;
 }
 
 /*置中位置*/
@@ -95,8 +96,10 @@ figure{
 
 /*圖片描述*/
 .pic_dis{ 
+	padding-top: 10px;
 	font-size: 23px;
 	text-align: center;
+	line-height: 25px;
 }
 
 /*07.html float圖片Div距離左邊界*/
@@ -117,10 +120,14 @@ figure{
 .abreast-05{
 	padding: 2%;
 }
+.abreast-06{
+	padding-top: 4%;
+}
+
 
 /*圖片Div之間的排列*/
 .abreast-left{
-	padding-left: 2%;
+	padding-left: 3%;
 	display: inline;
 	float: left;
 }
