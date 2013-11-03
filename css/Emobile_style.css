@@ -4,7 +4,44 @@ header {
 	width:90%;
 }
 body{
-	background: #000 url(../picture/05.jpg) center center no-repeat;
+	
+	/*背景漸層*/
+	background: 
+		rgba(168,250,250,1);
+	/*FireFox的語法*/
+	background: 
+		-moz-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
+	/*Chrome的語法*/
+	background: 
+		-webkit-gradient(left top, left bottom, color-stop(0%, rgba(168,250,250,1)), color-stop(44%, rgba(212,234,247,1)), color-stop(68%, rgba(213,183,235,1)), color-stop(86%, rgba(167,88,240,1)), color-stop(100%, rgba(77,71,245,1)));
+	background: 
+		-webkit-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
+	/* Opera 11.10+ */
+	background: 
+		-o-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
+	/*IE6~IE8的語法*/
+	background: 
+		-ms-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
+	background: 
+		linear-gradient(to bottom, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
+	filter: 
+		progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fafa', endColorstr='#4d47f5', GradientType=0 );
+		
+	/*背景外框*/
+	border: groove 9px #8d92eb;
+			-moz-border-radius-topleft: 14px;
+			-moz-border-radius-topright:14px;
+			-moz-border-radius-bottomleft:14px;
+			-moz-border-radius-bottomright:13px;
+			-webkit-border-top-left-radius:14px;
+			-webkit-border-top-right-radius:14px;
+			-webkit-border-bottom-left-radius:14px;
+			-webkit-border-bottom-right-radius:13px;
+			border-top-left-radius:14px;
+			border-top-right-radius:14px;
+			border-bottom-left-radius:14px;
+			border-bottom-right-radius:13px;
+			
 	-moz-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
@@ -31,6 +68,7 @@ p{
 	clear : left;
 	line-height: 33px;
 	padding-top: 10px;
+	font-weight: bold;
 }
 figure{
 	font-family: 微軟正黑體;
@@ -94,8 +132,9 @@ figcaption{
 .pic_name_nopadding{
 	font-size: 26px;
 	font-weight: bold;
+	text-shadow:7px 4px 6px #faef23;
 	text-align: center;
-	color: #7D26CD;
+	color: brown;
 	line-height: 30px;
 }
 
@@ -115,17 +154,72 @@ figcaption{
 	display: inline;
 }
 .abreast-01{
-	padding: 1%;
+	padding: 2%;
 }
 .abreast-02{
 	display: inline;
-}
-.abreast-03{
-	padding-left: 8%;
 }
 .abreast-04{
 	padding-bottom: 14px;
 }
 
-
-
+.classname1{
+	transition:All 1s ease-in-out;
+	-webkit-transition:All 1s ease-in-out;
+	-moz-transition:All 1s ease-in-out;
+	-o-transition:All 1s ease-in-out;
+	transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
+	-moz-transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
+}
+.classname1:hover{
+	z-index: 1;
+	position:relative;
+	transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
+}
+.classname2{
+	transition:All 1s ease-in-out;
+	-webkit-transition:All 1s ease-in-out;
+	-moz-transition:All 1s ease-in-out;
+	-o-transition:All 1s ease-in-out;
+	transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+.classname2:hover{
+	z-index: 1;
+	position:relative;
+	transform: rotate(0deg) scale(1.3) skew(0deg) translate(-1px);
+	-webkit-transform: rotate(0deg) scale(1.3) skew(0deg) translate(-1px);
+	-moz-transform: rotate(0deg) scale(1.3) skew(0deg) translate(-1px);
+	-o-transform: rotate(0deg) scale(1.3) skew(0deg) translate(-1px);
+	-ms-transform: rotate(0deg) scale(1.3) skew(0deg) translate(-1px);
+}
+.classname3{
+	transition:All 1s ease-in-out;
+	-webkit-transition:All 1s ease-in-out;
+	-moz-transition:All 1s ease-in-out;
+	-o-transition:All 1s ease-in-out;
+	transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+}
+.classname3:hover{
+	z-index: 1;
+	position:relative;
+	transform: rotate(0deg) scale(1.6) skew(0deg) translate(-7px);
+	-webkit-transform: rotate(0deg) scale(1.6) skew(0deg) translate(-7px);
+	-moz-transform: rotate(0deg) scale(1.6) skew(0deg) translate(-7px);
+	-o-transform: rotate(0deg) scale(1.6) skew(0deg) translate(-7px);
+	-ms-transform: rotate(0deg) scale(1.6) skew(0deg) translate(-7px);
+}
