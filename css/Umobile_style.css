@@ -11,7 +11,7 @@ body{
 article{
 	margin: 0px auto;
 	width:80%;
-	padding-left:6%;
+	padding-left: 10%;
 }
 h1{
 	font-size: 50px;
@@ -53,6 +53,7 @@ figcaption{
 	width: 90%;
 	background-color: #B4EEB4;
 	line-height: 30px;
+	margin-left: 5%;
 }
 
 /*內容有問號的句子*/

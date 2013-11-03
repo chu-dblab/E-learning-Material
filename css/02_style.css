@@ -14,14 +14,16 @@ article{
 	padding-left:5.5%;
 	padding-right:5%;
 }
+
 h1{
 	font-size: 55px;
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
-	margin-top: 66px;
+	margin-top: 90px;
 	padding-bottom: 40px;
+	line-height: 110%;
 }
 p{
 	font-size: 26px;
@@ -35,6 +37,7 @@ figure{
 	font-family: 微軟正黑體;
 	font-size: 20px;
 	margin: 20px;
+	text-align: center;
 }
 figcaption{
 	margin-top: 10px;
@@ -44,7 +47,7 @@ figcaption{
 	font-size: 22px;
 	padding-left: 2%;
 	text-align: center;
-	width: 45%;
+	width: 80%;
 	background-color: #EED5B7;
 	line-height: 30px;
 }
@@ -86,12 +89,14 @@ figcaption{
 	padding-bottom: 30px;
 	text-align: center;
 	color: #00DD00;
+	line-height: 110%;
 }
 .pic_name_nopadding{
 	font-size: 26px;
 	font-weight: bold;
 	text-align: center;
 	color: #00DD00;
+	line-height: 110%;
 }
 
 /*圖片描述*/
@@ -123,7 +128,9 @@ figcaption{
 .abreast-06{
 	padding-top: 4%;
 }
-
+.abreast-07{
+	margin-left: 8%;
+}
 
 /*圖片Div之間的排列*/
 .abreast-left{
@@ -159,4 +166,3 @@ figcaption{
 	width: 301px;
     height: 181px;
 }
-

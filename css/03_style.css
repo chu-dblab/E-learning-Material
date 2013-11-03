@@ -22,8 +22,9 @@ h1{
 	color: #6A5ACD;
 	text-shadow: shadow1, shadow2, shadow3;
 	text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-	margin-top: 66px;
+	margin-top: 90px;
 	padding-bottom: 40px;
+	line-height: 110%;
 }
 p{
 	font-size: 26px;
@@ -36,16 +37,17 @@ figure{
 	font-family: 微軟正黑體;
 	font-size: 20px;
 	margin: 20px;
+	text-align: center;
 }
 figcaption{
 	margin-top: 10px;
 }
 
 .context_center{
+	padding: 1%;
 	font-size: 22px;
-	padding-left: 2%;
 	text-align: center;
-	width: 50%;
+	width: 80%;
 	background-color: #EED5B7;
 	line-height: 30px;
 }
@@ -70,7 +72,7 @@ figcaption{
 
 /*任何元件距離下邊界*/
 .last_line{
-	margin-bottom: 13%;
+	margin-bottom: 160px;
 }
 
 /*置中位置*/
@@ -117,6 +119,10 @@ figcaption{
 .abreast-04{
 	padding-bottom: 14px;
 }
+.abreast-05{
+	margin-left: 10%;
+}
+
 
 /*圖片Div之間的排列*/
 .abreast-left{

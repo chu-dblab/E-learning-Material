@@ -19,12 +19,14 @@ h1{
 	font-weight: bold;
 	text-align: center;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
-	margin-top: 66px;
+	margin-top: 90px;
 	padding-bottom: 40px;
+	line-height: 110%;
 }
 p{
 	font-size: 24px;
 	font-family: 微軟正黑體;
+	font-weight: bold;
 	clear : left;
 	line-height: 33px;
 	padding: 10px;
@@ -41,15 +43,18 @@ ol{
 	font-family: 微軟正黑體;
 	clear : left;
 	margin: 15px;
-	margin-left: 3%;
 }
 li{
 	line-height: 160%;
+	margin-left: 3%;
+	font-weight: bold;
 }
+
 figure{
 	font-family: 微軟正黑體;
 	font-size: 20px;
 	line-height: 23px;
+	text-align: center;
 }
 figcaption{
 	margin-top: 10px;
@@ -58,9 +63,11 @@ figcaption{
 	list-style-type: decimal;
 }
 .context_center{
+	margin-left: 23.5%;
+	margin-top: 0px;
 	padding-left: 2%;
 	text-align: center;
-	width:28%;
+	width:50%;
 	background-color: #FFBBFF;
 }
 
@@ -91,14 +98,23 @@ figcaption{
 
 /*圖片描述距離下邊界*/
 .pic_dis{
-	font-size: 20px;
+	font-size: 22px;
 	padding-bottom: 20px;
-	text-align: center;
+	font-weight: bold;
+}
+.pic_dis_align{
+	font-size: 22px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	text-align: left;
 }
 
 /*部分圖片距離左邊界*/
 .pic_part{
 	margin-left: 13.5%;
+}
+.other{
+	color: red;
 }
 
 /*部分描述距離下界*/
@@ -108,12 +124,19 @@ figcaption{
 
 /*div與div的排列方式*/
 .abreast{
-	padding-right:2%;
 	float:left;
+	margin: 2%;
+	margin-left: 10%;
 	display: inline;
 }
 .abreast-01{
 	padding:2%;
+}
+.abreast-02{
+	margin-left: 8%;
+}
+.abreast-03{
+	margin-left: 3%;
 }
 
 /*圖片大小*/
@@ -129,5 +152,4 @@ figcaption{
 	width: 250px;
     height: 300px;
 }
-
 

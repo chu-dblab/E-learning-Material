@@ -69,12 +69,14 @@ p{
 	line-height: 33px;
 	padding-top: 10px;
 	font-weight: bold;
+
 }
 figure{
 	font-family: 微軟正黑體;
 	font-size: 24px;
 	margin: 20px;
 	font-weight: bold;
+	text-align: center;
 }
 figcaption{
 	margin-top: 10px;
@@ -87,6 +89,7 @@ figcaption{
 	width: 90%;
 	background-color: #EED5B7;
 	line-height: 30px;
+	margin-left: 5%;
 }
 
 /*內容有問號的句子*/
@@ -162,6 +165,9 @@ figcaption{
 .abreast-04{
 	padding-bottom: 14px;
 }
+.abreast-05{
+	margin-left: 3%;
+}
 
 .classname1{
 	transition:All 1s ease-in-out;
@@ -175,7 +181,7 @@ figcaption{
 	-ms-transform: rotate(4deg) scale(1) skew(0deg) translate(0px);
 }
 .classname1:hover{
-	z-index: 1;
+	z-index: 2;
 	position:relative;
 	transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
 	-webkit-transform: rotate(0deg) scale(1.5) skew(0deg) translate(0px);
@@ -208,11 +214,11 @@ figcaption{
 	-webkit-transition:All 1s ease-in-out;
 	-moz-transition:All 1s ease-in-out;
 	-o-transition:All 1s ease-in-out;
-	transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
-	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
-	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
-	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
-	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(-10px);
+	transform: rotate(0deg) scale(1) skew(0deg) translate(-5px);
+	-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(-5px);
+	-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(-5px);
+	-o-transform: rotate(0deg) scale(1) skew(0deg) translate(-5px);
+	-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(-5px);
 }
 .classname3:hover{
 	z-index: 1;
