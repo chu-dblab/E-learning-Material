@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>岩石中的紀錄 ( 化石是如何形成呢?)</title>
+	<title>生命的起源</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -41,41 +41,87 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>岩石中的紀錄 ( 化石是如何形成呢?)</h1>
+					<h1>生命先在水中演化</h1>
 				
-					<p>化石形成的方式有很多種，大都是因沈積作用而形成的，其一般過程如下：</p>
-						<ol>
-							<li class="list_type">生物的遺體被就地掩埋，或被搬運至海、湖或河底等。</li>
-							<img class="dis_bottom" src="p-ering/03/A7.png" alt="形成化石的第一步">
-							<li class="list_type">遺體被泥沙快速的覆蓋。</li>
-							<img class="dis_bottom" src="p-ering/03/A8.bmp" alt="形成化石的第二步">
-							<li class="list_type">柔軟組織被吃掉或被細菌分解腐爛掉，堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石。</li>
-							<img class="dis_bottom" src="p-ering//03/A9.png" alt="形成化石的第三步">
-							<li class="list_type">地殼變動時，含有化石的岩層露出地表。</li>
-							<img class="dis_bottom" src="p-ering/03/A10.bmp" alt="形成化石的第四步">
-						</ol>
-					</p>
-					<p>在這個過程中，泥沙、生物體……等物質，慢慢堆積之後經壓力、溫度等作用，硬化形成岩石，這也就是碎屑沈積岩形成的過程。</p>
-					</p>
-					<p class="last_line">自然界中，生物死後通常屍體都會因外力的破壞或細菌的作用而完全分解，身體較堅硬的部分，如骨骼或外殼也是一樣，
-					   只是需要的時間較長，但因此它們也較有機會，因沉積作用或其他因素，形成化石被保存下來。
-					</p>
+					<p>生命登陸前數億年，已有許多生物棲息水中。其中如三葉蟲已滅絕，但有些仍然生存迄今，且外型僅些微差異。</p>
+					
+					<div class="middle_line">
+						<img class="pic_size_02 abreast-01 classname4" src="p-ering/05/A14.png" alt="A14">
+						<img class="pic_size_02 abreast-01 classname4" src="p-ering/05/A15.png" alt="A15">
+						<img class="pic_size_02 abreast-01 classname4" src="p-ering/05/A16.png" alt="A16">
+						<img class="pic_size_02 abreast-01 classname4" src="p-ering/05/A17.png" alt="A17">
+						<img class="pic_size_02 abreast-01 classname4" src="p-ering/05/A18.png" alt="A18">
+					</div>
+					<p class="last_line"></p>
 					
 				</article>
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 請依據下圖的化石選出正確的答案？</h3>
+			<div class="abreast-07">
+				<img class="pic_size_02 classname4" src="p-ering/question_pic/Q1.jpg" alt="Q1">
+			</div>
+			<div class="abreast-07">
+				<button type="button" class="button_answer_pic" onClick="return_study()">
+					（A）<img class="pic_size_04" src="p-ering/question_pic/Q2.jpg" alt="Q2"></button>
+				<button type="button" class="button_answer_pic">
+					（B）<img class="pic_size_04" src="p-ering/question_pic/Q3.jpg" alt="Q3"></button>
+				<button type="button" class="button_answer_pic"  onClick="return_study()">
+					（C）<img class="pic_size_04" src="p-ering/question_pic/Q4.jpg" alt="Q4"></button>
+			</div>
+        </div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+			var ans = []; //存放題號、答題對錯(1:對,0:錯)
+			var i = 0;
+			var timeOut;
+			function finish_click()
+			{
+				if( i == 0 )
+				{
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+				}
+            }
+			function return_study()
+			{
+				ans[0] = "Q3-1";
+				ans[1] = 0;
+				alert("答錯了!!  請再學習一次!!");
+				$("div#question1").css("display","none");
+				$("div#question2").css("display","none");
+				$("div#content").css("display","inline");
+				i = i + 1;
+				count = 6;
+				ftime();
+			}
+			function ftime(){ time(); }
+			function time()
+			{
+					if (count == 0) {
+						$("input#fin_but").attr("disabled", false);
+						$("input#fin_but").val("學習完成");
+						i = 0;
+						clearTimeout(timeOut);
+					}
+					else {
+						count--;
+						$("input#fin_but").attr("disabled", "disabled");
+						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+						timeOut = setTimeout(time, 1000);
+					}
+			}
+        </script>
 
 </body>
 </html>

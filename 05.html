@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>生命先在水中演化</title>
+	<title>生命登上陸地</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -41,53 +41,109 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>生命先在水中演化</h1>
+					<h1>古代的兩棲類</h1>
 				
-					<p>生命登陸前數億年，已有許多生物棲息水中。其中如三葉蟲已滅絕，但有些仍然生存迄今，且外型僅些微差異。</p>
-
-					<figure>
-						<div class="abreast">
-							<img class="pic_size_02 abreast-01 classname1" src="p-ering/05/A14.png" alt="A14">
-						</div>
-					</figure>
-					<figure>
-						<div class="abreast">
-							<img class="pic_size_02 abreast-01 classname1" src="p-ering/05/A15.png" alt="A15">
-						</div>
-					</figure>
-					<figure>
-						<div class="abreast">
-							<img class="pic_size_02 abreast-01 classname1" src="p-ering/05/A16.png" alt="A16">
-						</div>
-					</figure>
-					<figure>
-						<div class="abreast">
-							<img class="pic_size_02 abreast-01 classname1" src="p-ering/05/A17.png" alt="A17">
-						</div>
-					</figure>
-					<figure>
-						<div class="abreast last_line">
-								<img class="pic_size_02 abreast-01 classname1" src="p-ering/05/A18.png" alt="A18">
-						</div>
-					</figure>
+					<p>從水中登上陸地可能是脊椎動物演化的里程碑。
+					   然而，我們對於這一段的演化過程卻所知不多。
+					   幸好有關古代兩棲類的新發現才讓我們有進一步的瞭解。</p>
 					
-					<p class="last_line"></p>
+					<h2><img src="picture/葉.png" alt="葉">樹蜥螈</h2>
+					<figure>
+							<img class="pic_size_01 classname1" src="p-ering/07/B6.bmp" alt="樹蜥螈的重建模型">
+							<figcaption class="pic_name">樹蜥螈的重建模型</figcaption>
+							<img class="pic_size_01 classname1" src="p-ering/07/B5.png" alt="樹蜥螈的化石模型三億四千萬年前">
+							<figcaption class="pic_name_nopadding">樹蜥螈的化石模型三億四千萬年前</figcaption>
+					</figure>
+
+					<p>這是樹蜥螈的化石複製品，也是我們所知最完整最古老的陸生兩棲類的骨骼。
+					   再發現它之前，只從化石碎片中得知樹蜥螈的存在。
+					   其近親魚石蝝還是魚的模樣，而化石顯示樹蜥螈具有發育完全的四肢，已能適應陸地的生活。
+					   在沼澤森林形成之前，樹蜥螈是棲於溫泉旁邊的兩棲類之一。
+					   牠們以陸上的小無脊堆動物為食，例如蠍子、蜘蛛和蜈蚣等。</p>
+					
+					<p/>
+					<hr/>
+					<p/>
+					<h2><img src="picture/葉.png" alt="葉">盤蜥螈</h2>
+					<figure>
+						<div class="middle_line">
+							<img class="classname1" src="p-ering/08/B7.bmp" alt="樹蜥螈的化石模型三億四千萬年前">
+							<figcaption>
+									<div class="pic_name_nopadding">盤蜥螈的化石</div>
+									<div class="pic_dis">距今兩億七千萬年前</div>
+							</figcaption>
+						</div>
+					</figure>
+
+					<p class="last_line">這具盤蜥螈化石已有二億七千萬年之久，它屬於後來演化成爬蟲類的古老兩棲類之一。
+										 它與較大的西蠓螈是近親。</p>
 					
 				</article>
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 盤蜥螈化石已有兩億七千萬年之久，屬於後來演化成爬蟲類的古老兩棲類之一。請問下列何者是盤蜥螈的近親？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">（A）三葉蟲</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（B）劍鼻魚</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">（C）西蠓螈</button></li>
+			</ul>
+			<h3/>
+        </div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+			var ans = []; //存放題號、答題對錯(1:對,0:錯)
+			var i = 0;
+			var timeOut;
+			function finish_click()
+			{
+				if( i == 0 )
+				{
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+				}
+            }
+			function return_study()
+			{
+				ans[0] = "Q5-1";
+				ans[1] = 0;
+				alert("答錯了!!  請再學習一次!!");
+				$("div#question1").css("display","none");
+				$("div#question2").css("display","none");
+				$("div#content").css("display","inline");
+				i = i + 1;
+				count = 6;
+				ftime();
+			}
+			function ftime(){ time(); }
+			function time()
+			{
+					if (count == 0) {
+						$("input#fin_but").attr("disabled", false);
+						$("input#fin_but").val("學習完成");
+						i = 0;
+						clearTimeout(timeOut);
+					}
+					else {
+						count--;
+						$("input#fin_but").attr("disabled", "disabled");
+						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+						timeOut = setTimeout(time, 1000);
+					}
+			}
+        </script>
 
 </body>
 </html>

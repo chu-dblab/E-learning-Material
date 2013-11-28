@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>含有生物遺跡的岩石( 什麼是化石？)</title>
+	<title>生命的起源</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -41,7 +41,9 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>含有生物遺跡的岩石( 什麼是化石？)</h1>
+					<h1>含有生物遺跡的岩石</h1>
+					
+					<h2 class="hleft"><img src="picture/葉.png" alt="葉">什麼是化石？</h2>
 					
 					<p>科學家說：只要是古代生物的遺骸或遺跡，經過自然作用而保存下來的，均可稱為“化石”。</p>
 					<p class="question">
@@ -65,28 +67,73 @@
 						</ul>
 					</p>
 					
-					<h1>含有生物遺跡的岩石(礦石)</h1>
+					<hr/>
+					<p/>
+					<h2><img src="picture/葉.png" alt="葉">礦石</h2>
 				
-					<p class="other"><u>地球由含有各種不同礦物的岩石所組成。</u></p>
-					<p>岩石多達數千種，依其形成過程可分為火成岩、沉積岩和變質岩。</p>
-					<p>許多沉積岩含有生物的遺體，這些生物層層沉積在海底或河床上，
-					   然後又被後來的沉積物覆蓋並壓實。</p>		
+					<p class="other middle_line"><u>地球由含有各種不同礦物的岩石所組成。</u></p>
+					<p class="middle_line">岩石多達數千種，依其形成過程可分為火成岩、沉積岩和變質岩。</p>
+					<p class="middle_line">許多沉積岩含有生物的遺體，這些生物層層沉積在海底或河床上，
+										   然後又被後來的沉積物覆蓋並壓實。</p>		
 					
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
-	
-		<footer>
-			
-		</footer>
+		
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 由生物遺跡形成的化石，稱為什麼化石？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer">（A）生痕化石</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（B）印痕化石</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（C）軀體化石</button></li>
+			</ul>
+			<h3/>
+        </div>
+        <div id="question2" class="section white middle_line">
+			<h3> Q： 海百合其體桿由許多盤狀體節組成，請問下列何者與海百合同類？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">(A) 海星</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">(B) 海膽</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">(C) 以上皆是</button></li>
+			</ul>
+			<h3/>
+        </div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+			function finish_click()
+			{
+				var n = Math.floor(Math.random() * 2) + 1;
+				if( n == 1 ){
+					$("div#content").css("display","none");
+					$("div#question1").css("display","inline");
+				}
+				else{
+					$("div#content").css("display","none");
+					$("div#question2").css("display","inline");
+				}
+            }
+			function return_study()
+			{
+				alert("答錯了!!  請再學習一次!!");
+				$("div#question1").css("display","none");
+				$("div#question2").css("display","none");
+				$("div#content").css("display","inline");
+			}
+        </script>
+	
 </body>
 </html>

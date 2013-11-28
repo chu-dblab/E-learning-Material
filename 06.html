@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>最早的森林</title>
+	<title>恐龍時代</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -16,7 +16,7 @@
 	<link href="assets/css/YUI-reset.css" rel="stylesheet" />
 	
 	<!-- 套用自己的樣式 -->
-	<link href="css/02_style.css" rel="stylesheet" media="screen" />
+	<link href="css/01_style.css" rel="stylesheet" media="screen" />
 	<link href="css/Emobile_style.css" rel="stylesheet" media="handheld, screen and (max-width: 480px)" />
 	
 	<!-- 舊版IE相容性 -->
@@ -41,42 +41,166 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>最早的森林</h1>
-				
-					<p>在三億五千萬年前和二億八千萬年前之間，濃密的熱帶森林分佈在亞洲、歐洲及北美洲的低窪沼澤區。
-					   當時當地的氣候溫暖而潮濕，一些新種的植物快速地成長並且極為高大。昆蟲在其中飛翔、飛行。
-					   蠍、蜈蚣及蜘蛛捕食昆蟲，植食性的馬陸在植株下潛行。</p>
-
-					<p>有些古代之動物有巨大的體軀，在您眼前的模型是原來的尺寸。</p>
-					<p>森林中的葉子和樹幹在沼澤中經歷了數百萬年的堆積。
-					   再加上壓力的作用，這些植物的殘留物便形成現今的媒層。
-					   因煤之主要成份為炭，這個地質年代便被稱之為石炭紀。</p>
-					<p class="emphasis">下圖為石炭紀的植物化石</p>
-
+					<h1>恐龍時代</h1>
+					<h2><img src="picture/葉.png" alt="葉">恐龍年代及分類</h2>
+					<div class="middle_line">
+						<img class="classname2" src="p-ering/14/C12.png" alt="恐龍時代各紀">
+					</div>
+					<p/>
+					<div class="middle_line">
+						<img class="classname2" src="p-ering/14/C11.png" alt="恐龍家族">
+					</div>
+					<p/>
+					<hr/>
+					<p/>
+					<h2><img src="picture/葉.png" alt="葉">蒙古的恐龍</h2>
 					<figure>
 						<div class="middle_line">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B1.bmp" alt="B1">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B2.png" alt="B2">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B3.png" alt="B3">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B4.bmp" alt="B4">
+							<img src="p-ering/09/C2.png" alt="美國自然史博物館於20年代及90年代在蒙古進行恐龍發掘">
+							<figcaption class="pic_name_nopadding">美國自然史博物館於20年代及90年代在蒙古進行恐龍發掘</figcaption>
 						</div>
 					</figure>
-				<p class="last_line"></p>
-				</article>			
+				
+					<p>分布在蒙古戈壁沙漠的小暴龍和特暴龍，是暴龍家族在亞洲的代表，也是白堊紀晚期的肉食性恐龍。
+					   特暴龍的體型比北美暴龍較小，全長約１２公尺左右。</p>
 
+					<p>自從1920年代至90年代，歐美各國科學家多次在戈壁進行發掘工作，結果十分豐碩。
+					   此外，在戈壁發現的恐龍化石，大都屬於白堊紀晚期。 </p>
+					<p/>
+					<div class="middle_line">
+						<img src="p-ering/09/C1.png" alt="C1">
+					</div>
+				
+				</article>			
+				<p class="last_line"></p>
+				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 下列選項中哪一種為「白堊紀晚期的肉食性恐龍」？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer">(A) 小暴龍</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">(B) 三角龍</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">(C) 長頸巨龍</button></li>
+			</ul>
+			<h3/>
+        </div>
+        <div id="question2" class="section white middle_line">
+			<h3> Q： 哪一種恐龍分布在蒙古戈壁沙漠是「暴龍家族在亞洲的代表」？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">(A) 劍龍</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">(B) 翼龍</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">(C) 特暴龍</button></li>
+			</ul>
+			<h3/>
+        </div>
+		<div id="question3" class="section white middle_line">
+			<h3 class="abreast-06"> Q： 分布在蒙古戈壁沙漠是「暴龍家族在亞洲的代表」的小暴龍和特暴龍是屬於哪一紀？</h3>
+			<br/><br/>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">(A) 侏儸紀晚期</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">(B) 白堊紀晚期</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">(C) 三疊紀晚期</button></li>
+			</ul>
+			<h3/>
+        </div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+			var ans = []; //存放題號、答題對錯(1:對,0:錯)
+			var i = 0;
+			var timeOut;
+			function finish_click()
+			{
+				if( i == 0 )
+				{
+					var n = Math.floor(Math.random() * 3) + 1;
+					if( n == 1 ){
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+					}
+				    else if(n == 2){
+						$("div#content").css("display","none");
+						$("div#question2").css("display","inline");
+					}
+					else{
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+					}
+				}
+            }
+			function return_study()
+			{
+				if($("div#question1"))
+				{
+					ans[0] = "Q6-1";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				else if($("div#question2"))
+				{
+					ans[0] = "Q6-2";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				else
+				{
+					ans[0] = "Q6-3";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				ftime();
+			}
+			function ftime(){ time(); }
+			function time()
+			{
+					if (count == 0) {
+						$("input#fin_but").attr("disabled", false);
+						$("input#fin_but").val("學習完成");
+						i = 0;
+						clearTimeout(timeOut);
+					}
+					else {
+						count--;
+						$("input#fin_but").attr("disabled", "disabled");
+						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+						timeOut = setTimeout(time, 1000);
+					}
+			}
+        </script>
 
 </body>
 </html>

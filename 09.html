@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>蒙古的恐龍</title>
+	<title>恐龍時代</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -16,7 +16,7 @@
 	<link href="assets/css/YUI-reset.css" rel="stylesheet" />
 	
 	<!-- 套用自己的樣式 -->
-	<link href="css/02_style.css" rel="stylesheet" media="screen" />
+	<link href="css/01_style.css" rel="stylesheet" media="screen" />
 	<link href="css/Emobile_style.css" rel="stylesheet" media="handheld, screen and (max-width: 480px)" />
 	
 	<!-- 舊版IE相容性 -->
@@ -41,41 +41,142 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>蒙古的恐龍</h1>
+					<h1>巨龍的腳印</h1>
 				
-					<figure>
-						<div class="middle_line">
-							<img src="p-ering/09/C2.png" alt="美國自然史博物館於20年代及90年代在蒙古進行恐龍發掘">
-							<figcaption class="pic_name_nopadding">美國自然史博物館於20年代及90年代在蒙古進行恐龍發掘</figcaption>
+						<div class="middle_line pic_name">
+							<img src="p-ering/13/C10.bmp" alt="C10">
 						</div>
-					</figure>
 				
-					<p>分布在蒙古戈壁沙漠的小暴龍和特暴龍，是暴龍家族在亞洲的代表，也是白堊紀晚期的肉食性恐龍。
-					   特暴龍的體型比北美暴龍較小，全長約１２公尺左右。</p>
-
-					<p>自從1920年代至90年代，歐美各國科學家多次在戈壁進行發掘工作，結果十分豐碩。
-					   此外，在戈壁發現的恐龍化石，大都屬於白堊紀晚期。 </p>
+					<p><strong class="other">腳印</strong>是恐龍留下的遺跡，所以是化石。(這一類由生物遺跡形成的化石，叫生痕化石。)</p>
+					<p>並且透過腳印的面積和深度，可使我們了解到巨腳龍的體型與體重等相關資料，間接也証明了巨腳龍的存在，所以它也是化石。</p>
 					
-					<div class="middle_line abreast-06">
-						<img src="p-ering/09/C1.png" alt="C1">
-					</div>
-				
 				</article>			
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3 class="abreast-06"> Q： 腳印是恐龍留下的遺跡，所以是化石。這一類由生物遺跡形成的化石又稱為什麼化石？</h3>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">（A）活化石</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">（B）生痕化石</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（C）印痕石</button></li>
+			</ul>
+			<h3/>
+        </div>
+        <div id="question2" class="section white middle_line">
+			<h3 class="abreast-06"> Q： 透過腳印的什麼，可使我們了解到巨腳龍的體型與體重等相關資料，間接也証明了巨腳龍的存在？</h3>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">（A）面積</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（B）深度</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">（C）以上皆是</button></li>
+			</ul>
+			<h3/>
+        </div>
+		<div id="question3" class="section white middle_line">
+			<h3 class="abreast-06"> Q： 我們可以透過腳印的面積和深度，了解巨腳龍的哪些相關資料？</h3>
+			<ul>
+				<li><button type="button" class="button_answer" onClick="return_study()">（A）體型</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer" onClick="return_study()">（B）體重</button></li>
+				<br/><br/>
+				<li><button type="button" class="button_answer">（C）以上皆是</button></li>
+			</ul>
+			<h3/>
+        </div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+			var ans = []; //存放題號、答題對錯(1:對,0:錯)
+			var i = 0;
+			var timeOut;
+			function finish_click()
+			{
+				if( i == 0 )
+				{
+					var n = Math.floor(Math.random() * 3) + 1;
+					if( n == 1 ){
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+					}
+				    else if(n == 2){
+						$("div#content").css("display","none");
+						$("div#question2").css("display","inline");
+					}
+					else{
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+					}
+				}
+            }
+			function return_study()
+			{
+				if($("div#question1"))
+				{
+					ans[0] = "Q9-1";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				else if($("div#question2"))
+				{
+					ans[0] = "Q9-2";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				else
+				{
+					ans[0] = "Q9-3";
+					ans[1] = 0;
+					alert("答錯了!!  請再學習一次!!");
+					$("div#question1").css("display","none");
+					$("div#question2").css("display","none");
+					$("div#question3").css("display","none");
+					$("div#content").css("display","inline");
+					i = i + 1;
+					count = 2;
+				}
+				ftime();
+			}
+			function ftime(){ time(); }
+			function time()
+			{
+					if (count == 0) {
+						$("input#fin_but").attr("disabled", false);
+						$("input#fin_but").val("學習完成");
+						i = 0;
+						clearTimeout(timeOut);
+					}
+					else {
+						count--;
+						$("input#fin_but").attr("disabled", "disabled");
+						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+						timeOut = setTimeout(time, 1000);
+					}
+			}
+        </script>
 
 </body>
 </html>
