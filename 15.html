@@ -81,19 +81,186 @@
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-danger btn btn-large">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 木乃伊的墓葬儀式中，最重要的是什麼儀式。藉由此儀式，使木乃伊裡的魂魄能順利到陰府進行死後審判？</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">（A）開口儀式</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）蓋棺儀式</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）取出內臟儀式</button>
+			</div>
+			<h3/><br/><br/>
+        </div>
+		<div id="question2" class="section black middle_line">
+            <h3> Q： 製作木乃伊最大的目的就是在於將死者的肉體妥善保存，以保證死者復活的程序完善。</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">（A）正確</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+			</div>
+			<p class="abreast-08"/><h3><br/>
+        </div>
+		<div id="question3" class="section black middle_line">
+            <h3> Q： 根據埃及的神話傳統，相傳某位女神將被分屍的奧賽立斯神的屍首縫合，並重新賦予生命，其形象就是木乃伊的模式。</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）娜芙希斯</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）瑪特</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（C）愛西絲</button>
+			</div>
+			<p class="abreast-08"/><br/>
+        </div>
+		<div id="question4" class="section black middle_line">
+            <h3> Q： 在新王國時期，製作木乃伊依然是少數貴族統治階級才能享有的復活特權。</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）正確</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（B）不正確</button>
+			</div>
+			<p class="abreast-08"/><h3><br/>
+        </div>
+		
+		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-header">
+		  <p/>
+			<h4 id="myModalLabel">答錯囉!!</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>請回去教材再學習一次喔!!</p>
+		  </div>
+		  <div class="modal-footer">
+			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		  </div>
+		</div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script>
+		//data-toggle="modal" data-target="#fault_ans" 
+		var ans = []; //存放題號、答題對錯(1:對,0:錯)
+		var timearray = []; //用來存回答時間
+		var count = 2; //倒數的次數
+		var i = 0;
+		var timeOut;
 
+		<!--學習完教材按下「學習完成」扭-->
+		function finish_click()
+		{
+			today1 = new Date();
+			timearray[0]=today1.getHours();
+			timearray[1]=today1.getMinutes();
+			timearray[2]=today1.getSeconds();
+			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			if( i == 0 )
+			{
+				var n = Math.floor(Math.random() * 4) + 1;
+				switch(n){
+					case 1:
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+						//alert("1");
+						break;
+					case 2:
+						$("div#content").css("display","none");
+						$("div#question2").css("display","inline");
+						//alert("2");
+						break;
+					case 3:
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+						//alert("3");
+						break;
+					case 4:
+						$("div#content").css("display","none");
+						$("div#question4").css("display","inline");
+						//alert("4");
+						break;
+				}
+			}
+		}
+			
+		<!--跳出答錯的alert視窗-->
+		function alertans()
+		{
+			today2 = new Date();
+			timearray[3]=today2.getHours();
+			timearray[4]=today2.getMinutes();
+			timearray[5]=today2.getSeconds();
+			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
+			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
+			//alert("回答時間:"+timearray[6]);
+			if($("div#question1"))
+			{
+				ans[0] = "Q15-1";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question2"))
+			{
+				ans[0] = "Q15-2";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question3"))
+			{
+				ans[0] = "Q15-3";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else
+			{
+				ans[0] = "Q15-4";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+		   $("#fault_ans").modal({show:false});
+		}
+			
+		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
+		function return_study() 
+		{
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			$("div#question1").css("display","none");
+			$("div#question2").css("display","none");
+			$("div#question3").css("display","none");
+			$("div#question4").css("display","none");
+			$("div#fault_ans").css("display","none");
+			$("div#content").css("display","inline");	
+			i = i + 1;
+			count = 2;
+			ftime();
+		}
+		<!--按鈕倒數計時-->
+		function ftime(){ time(); }
+		function time()
+		{
+			if (count == 0) {
+				$("input#fin_but").attr("disabled", false);
+				$("input#fin_but").val("學習完成");
+				i = 0;
+				clearTimeout(timeOut);
+			}
+			else {
+				count--;
+				$("input#fin_but").attr("disabled", "disabled");
+				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+				timeOut = setTimeout(time, 1000);
+			}
+		}
+    </script>
 </body>
 </html>

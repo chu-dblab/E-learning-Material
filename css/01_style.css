@@ -194,6 +194,7 @@ img.img05{
 .question{
 	color: #c71585;
 	font-weight: bold;
+	line-height: 110%;
 }
 
 /*任何元件距離下邊界*/
@@ -259,7 +260,7 @@ img.img05{
 	padding-bottom: 20px;
 	font-weight: bold;
 	line-height: 120%;
-	margin-top: 0px;
+	margin-top: 10px;
 }
 .pic_dis_align{
 	font-size: 22px;

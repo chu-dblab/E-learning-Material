@@ -232,10 +232,14 @@ img.img05{
 }
 
 /*圖片描述*/
-.pic_dis{ 
-	font-size: 22px;
+.pic_dis{
 	text-align: center;
-	padding-bottom: 0px;
+	font-family: 微軟正黑體;
+	font-size: 22px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	line-height: 120%;
+	margin-top: 10px;
 }
 
 .pic_part{
