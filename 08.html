@@ -10,7 +10,7 @@
 	<title>恐龍時代</title>
 	
 	<!--放網址小圖示-->
-	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
 	
 	<!-- 清除預設樣式 -->
 	<link href="assets/css/YUI-reset.css" rel="stylesheet" />
@@ -41,35 +41,30 @@
 		<div id="content" class="con_total">
 			<div class="inner">
 				<article>
-					<h1>竊蛋龍</h1>
+					<h1>恐龍再現</h1>
 				
-						<div class="middle_line pic_name">
-							<img class="classname1" src="p-ering/11/C8.bmp" alt="C8">
+						<div class="middle_line abreast-05">
+							<img src="p-ering/10/C3.bmp" alt="C3">
+							<br/><br/>
 						</div>
-				
-					<p>屬於<strong class="other">腔尾龍類</strong>一員的竊蛋龍，是一種善於奔跑的二足小型恐龍。牠最明顯的特徵是頭部短；而且頭上還有一高聳的骨質頭冠，非常的突出。</p>
-					<p>此外，竊蛋龍的嘴喙是沒有牙齒，取而代之是強而有力的喙和下顎，作用和現生鸚鵡的喙差不多。
-					   至於牠的前肢有著典型獸足類的利爪，從牠們的化石胃含物中，也常發現一些小型的脊椎動物，因此牠們應該也是肉食性的。</p>
-					<p>牠們主要分佈在蒙古的戈壁沙漠，生活年代為<strong class="other">晚白堊紀。</strong></p>
+					<p>恐龍已在六千五百萬年前滅絕了。沒有人有機會看過活的恐龍，透過化石和各種科學的研究發現，
+					   這提供了我們無限的想像空間去復原恐龍。首先是恐龍骨骼結構的復原，接著是以生物力學分析行為模式，
+					   再加上肌肉和皮膚，於是栩栩如生的恐龍又復活了。其實每一種膚色或每一個動作，
+					   都代表著科學家對這些遠古生物的生活方式的一種推測，是對是錯，有待更多的科學發現來驗證。
+					   科學的本質就是不斷探索。</p>
 					
-					<p/>
-					
-					<div class="middle_line">
-							<img class="classname1" src="p-ering/12/C9.bmp" alt="C9">
-						</div>
-				
-					<p class="question middle_line">
-						<img src="picture/Q.gif" alt="問題"> 竊蛋龍 ─ 是小偷，還是慈祥的母親？
-					</p>
-					<p>竊蛋龍最早是由美國自然史博物館於1920年代在中亞地區發掘之旅時所發現，當時其骨骸是在一窩被認為是原角龍蛋的旁邊，
-					   或許是天性吧，人類總會聯想到出現在好東西旁的傢伙，都是不懷好意，因此當時的科學家便認為這種恐龍正要偷取別的恐龍的蛋，
-					   所以就以竊蛋龍命名，並沿用至今。</p>
-					<p>1993年，美國自然史博物館的古生物學家在另一次中亞洲地區發掘之旅時，發現部份恐龍蛋窩中的蛋有竊蛋龍的胚胎，
-					   因此過去一直認為是原角龍的蛋，其實是屬於竊蛋龍的。</p>
-					<p>更重要的是發現一隻竊蛋龍蹲伏在一窩蛋上的化石，其姿態和今天的鳥在孵蛋時十分相似。
-					   由於新化石証物的發現，竊蛋龍一夜之間便由小偷成了慈祥的母親！</p>
-
-					
+					<figure>
+							<img class="pic_size_05 classname1" src="p-ering/10/C5.png" alt="將恐龍骨骼結構復原">
+							<figcaption class="pic_dis">將恐龍骨骼結構復原</figcaption>
+					</figure>
+					<figure>
+							<img class="pic_size_05 classname1" src="p-ering/10/C6.png" alt="以生物力學分析行為模式">
+							<figcaption class="pic_dis">以生物力學分析行為模式</figcaption>
+					</figure>
+					<figure>
+							<img class="pic_size_05 classname1" src="p-ering/10/C7.bmp" alt="加上肌肉與皮膚">
+							<figcaption class="pic_dis">加上肌肉與皮膚</figcaption>
+					</figure>
 				</article>			
 				<p class="last_line"></p>
 				
@@ -81,127 +76,105 @@
 		</div>
 	
 		<div id="question1" class="section black middle_line">
-            <h3> Q： 竊蛋龍主要分佈在蒙古的戈壁沙漠，生活年代為？</h3>
-			<br/><br/>
-			<ul>
-				<li><button type="button" class="button_answer" onClick="return_study()">(A) 三疊紀晚期</button></li>
+            <h3> Q： 透過化石和各種科學的研究發現，提供了我們無限的想像空間去復原恐龍。復原恐龍的步驟為？</h3>
+			<div class="abreast-07">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">
+					(A) 以生物力學分析行為模式→將恐龍骨骼結構復原→加上肌肉與皮膚</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer">(B) 白堊紀晚期</button></li>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">
+					(B) 加上肌肉與皮膚→以生物力學分析行為模式→將恐龍骨骼結構復原</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(C) 侏儸紀晚期</button></li>
-			</ul>
-			<h3/>
-			<h3/>
+				<button type="button" class="button_answer">
+					(C) 將恐龍骨骼結構復原→以生物力學分析行為模式→加上肌肉與皮膚</button>
+			</div>
+			<p class="abreast-08"/>
         </div>
-        <div id="question2" class="section white middle_line">
-			<h3> Q： 從恐龍軀體化石中，我們無法知道什麼？</h3>
-			<br/><br/>
-			<ul>
-				<li><button type="button" class="button_answer" onClick="return_study()">(A) 恐龍的重量</button></li>
-				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(B) 體型</button></li>
-				<br/><br/>
-				<li><button type="button" class="button_answer">(C) 以上皆是</button></li>
-			</ul>
-			<h3/>
-			<h3/>
-        </div>
-		<div id="question3" class="section white middle_line">
-			<h3 class="abreast-06"> Q： 竊蛋龍屬於哪一類恐龍且是一種善於奔跑的二足小型恐龍？</h3>
-			<br/><br/>
-			<ul>
-				<li><button type="button" class="button_answer" onClick="return_study()">(A) 稜齒龍類</button></li>
-				<br/><br/>
-				<li><button type="button" class="button_answer">(B) 腔尾龍類</button></li>
-				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(C) 堅尾龍類</button></li>
-			</ul>
-			<h3/>
-        </div>
-	</div>
-	
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+
+		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-header">
+		  <p/>
+			<h4 id="myModalLabel">答錯囉!!</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>請回去教材再學習一次喔!!</p>
+		  </div>
+		  <div class="modal-footer">
+			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		  </div>
+		</div>
+	</div>		
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script>
-			var ans = []; //存放題號、答題對錯(1:對,0:錯)
-			var i = 0;
-			var timeOut;
-			function finish_click()
-			{
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+		//data-toggle="modal" data-target="#fault_ans" 
+		var ans = []; //存放題號、答題對錯(1:對,0:錯)
+		var timearray = []; //用來存回答時間
+		var count = 2; //倒數的次數
+		var i = 0;
+		var timeOut;
+
+		<!--學習完教材按下「學習完成」扭-->
+		function finish_click()
+		{
+			today1 = new Date();
+			timearray[0]=today1.getHours();
+			timearray[1]=today1.getMinutes();
+			timearray[2]=today1.getSeconds();
+			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
+			$('html, body').scrollTop(0); //捲軸回到0的位置
 				if( i == 0 )
 				{
-					var n = Math.floor(Math.random() * 3) + 1;
-					if( n == 1 ){
-						$("div#content").css("display","none");
-						$("div#question1").css("display","inline");
-					}
-				    else if(n == 2){
-						$("div#content").css("display","none");
-						$("div#question2").css("display","inline");
-					}
-					else{
-						$("div#content").css("display","none");
-						$("div#question3").css("display","inline");
-					}
+					$("div#content").css("display","none");
+					$("div#question1").css("display","inline");
 				}
-            }
-			function return_study()
-			{
-				if($("div#question1"))
-				{
-					ans[0] = "Q8-1";
-					ans[1] = 0;
-					alert("答錯了!!  請再學習一次!!");
-					$("div#question1").css("display","none");
-					$("div#question2").css("display","none");
-					$("div#question3").css("display","none");
-					$("div#content").css("display","inline");
-					i = i + 1;
-					count = 2;
-				}
-				else if($("div#question2"))
-				{
-					ans[0] = "Q8-2";
-					ans[1] = 0;
-					alert("答錯了!!  請再學習一次!!");
-					$("div#question1").css("display","none");
-					$("div#question2").css("display","none");
-					$("div#question3").css("display","none");
-					$("div#content").css("display","inline");
-					i = i + 1;
-					count = 2;
-				}
-				else
-				{
-					ans[0] = "Q8-3";
-					ans[1] = 0;
-					alert("答錯了!!  請再學習一次!!");
-					$("div#question1").css("display","none");
-					$("div#question2").css("display","none");
-					$("div#question3").css("display","none");
-					$("div#content").css("display","inline");
-					i = i + 1;
-					count = 2;
-				}
-				ftime();
+        }
+		
+		<!--跳出答錯的alert視窗-->
+		function alertans()
+		{
+			today2 = new Date();
+			timearray[3]=today2.getHours();
+			timearray[4]=today2.getMinutes();
+			timearray[5]=today2.getSeconds();
+			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
+			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
+			//alert("回答時間:"+timearray[6]);
+			ans[0] = "Q8-1";
+			ans[1] = 0;
+			$("#fault_ans").css("display","inline");
+		   $("#fault_ans").modal({show:false});
+		}
+		
+		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
+		function return_study() 
+		{
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			$("div#question1").css("display","none");
+			$("div#fault_ans").css("display","none");
+			$("div#content").css("display","inline");	
+			i = i + 1;
+			count = 2;
+			ftime();
+		}
+		<!--按鈕倒數計時-->
+		function ftime(){ time(); }
+		function time()
+		{
+			if (count == 0) {
+				$("input#fin_but").attr("disabled", false);
+				$("input#fin_but").val("學習完成");
+				i = 0;
+				clearTimeout(timeOut);
 			}
-			function ftime(){ time(); }
-			function time()
-			{
-					if (count == 0) {
-						$("input#fin_but").attr("disabled", false);
-						$("input#fin_but").val("學習完成");
-						i = 0;
-						clearTimeout(timeOut);
-					}
-					else {
-						count--;
-						$("input#fin_but").attr("disabled", "disabled");
-						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
-						timeOut = setTimeout(time, 1000);
-					}
+			else {
+				count--;
+				$("input#fin_but").attr("disabled", "disabled");
+				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+				timeOut = setTimeout(time, 1000);
 			}
-        </script>
+		}
+    </script>
 
 </body>
 </html>

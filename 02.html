@@ -44,18 +44,18 @@
 				
 					<h1>岩石中的紀錄</h1>
 					
-					<h2 class="hleft"><img src="picture/葉.png" alt="葉">化石是如何形成呢?</h2>
+					<h2 class="hleft"><img src="picture/leaf.png" alt="葉">化石是如何形成呢?</h2>
 				
 					<p>化石形成的方式有很多種，大都是因沈積作用而形成的，其一般過程如下：</p>
 						<ol>
 							<li class="licontext list_type">生物的遺體被就地掩埋，或被搬運至海、湖或河底等。</li>
-							<img class="dis_bottom" src="p-ering/03/A7.png" alt="形成化石的第一步">
+							<img class="dis_bottom pic_size_01" src="p-ering/03/A7.JPG" alt="形成化石的第一步">
 							<li class="licontext list_type">遺體被泥沙快速的覆蓋。</li>
-							<img class="dis_bottom" src="p-ering/03/A8.bmp" alt="形成化石的第二步">
+							<img class="dis_bottom pic_size_01" src="p-ering/03/A8.JPG" alt="形成化石的第二步">
 							<li class="licontext list_type">柔軟組織被吃掉或被細菌分解腐爛掉，堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石。</li>
-							<img class="dis_bottom" src="p-ering//03/A9.png" alt="形成化石的第三步">
+							<img class="dis_bottom pic_size_01" src="p-ering//03/A9.JPG" alt="形成化石的第三步">
 							<li class="licontext list_type">地殼變動時，含有化石的岩層露出地表。</li>
-							<img class="dis_bottom" src="p-ering/03/A10.bmp" alt="形成化石的第四步">
+							<img class="dis_bottom pic_size_01" src="p-ering/03/A10.JPG" alt="形成化石的第四步">
 						</ol>
 					<p/>
 					<p>在這個過程中，泥沙、生物體……等物質，慢慢堆積之後經壓力、溫度等作用，硬化形成岩石，這也就是碎屑沈積岩形成的過程。</p>
@@ -66,7 +66,7 @@
 					
 					<hr/>
 					<p/>
-					<h2><img src="picture/葉.png" alt="葉">化石一定是在岩石中被保存下來嗎？</h2>
+					<h2><img src="picture/leaf.png" alt="葉">化石一定是在岩石中被保存下來嗎？</h2>
 				
 					<p>化石不一定是在岩石中被保存下來，在化石形成的過程中，包埋化石的物質叫「介質」，
 					   化石絕大部分是經沉積作用在岩石中被保存的，此外，保存化石的介質還有：煤層、焦油（如：美國加州的焦油坑）
@@ -86,11 +86,11 @@
 					<p/>
 					<p>以下兩張是<strong class="other">直接</strong>將泥沙覆蓋，而形成的化石：</p>
 					<figure>
-						<img class="pic_size_02 classname1" src="p-ering/04/A12.png" alt="劍鼻魚">
+						<img class="pic_size_05 classname1" src="p-ering/04/A12.JPG" alt="劍鼻魚">
 						<figcaption>
 							<div class="pic_name dis_bottom">劍鼻魚</div>
 						</figcaption>
-						<img class="pic_size_02 classname1" src="p-ering/04/A13.png" alt="懷俄明梧桐">
+						<img class="pic_size_05 classname1" src="p-ering/04/A13.JPG" alt="懷俄明梧桐">
 						<figcaption>
 							<div class="pic_name">懷俄明梧桐</div>
 						</figcaption>
@@ -98,7 +98,7 @@
 					<p></br>以下<strong class="other">不是直接</strong>將泥沙覆蓋，而形成的化石：</p>
 					
 					<figure>
-							<img class="pic_size_02 classname1" src="p-ering/04/A11.png" alt="琥珀中的昆蟲">
+							<img class="pic_size_05 classname1" src="p-ering/04/A11.png" alt="琥珀中的昆蟲">
 							<figcaption class="pic_name">琥珀中的昆蟲</figcaption>
 					</figure>
 					<p>
@@ -121,96 +121,244 @@
 	
 		<div id="question1" class="section black middle_line">
             <h3> Q： 下列的四個選項中，哪一個是直接被泥沙覆蓋，而形成的化石？</h3>
-			<ul class="ulcon">
-				<li><button type="button" class="button_answer" onClick="return_study()">(A) 劍鼻魚</button></li>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">（A）懷俄明梧桐</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(B) 琥珀中的昆蟲</button></li>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）琥珀中有隻昆蟲</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer">(C) 懸鈴木的葉片</button></li>
-			</ul>
-			<p class="abreast-08"/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）懸鈴木的葉片</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（D）以上皆非</button>
+			</div>
+			<p class="abreast-09"/>
         </div>
-        <div id="question2" class="section white middle_line">
-			<h3 class="abreast-06"> Q： 化石不一定是在岩石中被保存下來，
-								        在化石形成的過程中，
-										包埋化石的物質叫「介質」，
-										化石絕大部分是經沉積作用在岩石中被保存的，
-										此外，保存化石的介質還有？</h3>
-			<ul class="ulcon">
-				<li><button type="button" class="button_answer">(A) 煤層</button></li>
+		<div id="question2" class="section black middle_line">
+            <h3> Q： 化石不一定是在岩石中被保存下來，在化石形成的過程中，
+				 包埋化石的物質叫「介質」，化石絕大部分是經沉積作用在岩石中被保存的，此外，保存化石的介質還有?</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）樹上</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(B) 樹上</button></li>
+				<button type="button" class="button_answer">（B）焦油</button>
 				<br/><br/>
-				<li><button type="button" class="button_answer" onClick="return_study()">(C) 以上皆是</button></li>
-			</ul>
-			<p class="abreast-08"/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）以上皆是</button>
+			</div>
+			<p class="abreast-09"/>
         </div>
+		<div id="question3" class="section black middle_line">
+            <h3> Q： 化石因沈積作用而形成的過程，其順序而者正確?</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer_con">（A）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
+															 遺體被泥沙快速的覆蓋→柔軟組織被吃掉或被細菌分解腐爛掉，
+															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→地殼變動時，
+															 含有化石的岩層露出地表</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_con" onClick="alertans()">
+															（B）柔軟組織被吃掉或被細菌分解腐爛掉，
+															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→
+															 遺體被泥沙快速的覆蓋→生物的遺體被就地掩埋，或被搬運至海、
+															 湖或河底等→地殼變動時，含有化石的岩層露出地表</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_con" onClick="alertans()">
+															（C）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
+															 遺體被泥沙快速的覆蓋→地殼變動時，含有化石的岩層露出地表→
+															 柔軟組織被吃掉或被細菌分解腐爛掉，堅硬的部分如果很幸運地沒有被分解或破壞，
+															 漸形成化石</button>
+			</div>
+			<p class="abreast-09"/>
+        </div>
+		<div id="question4" class="section black middle_line">
+            <h3> Q： 下列何者是形成化石的因素?</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）壓力</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）溫度</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（C）以上皆是</button>
+			</div>
+			<p class="abreast-09"/><h2/><br/>
+        </div>
+		<div id="question5" class="section black middle_line">
+            <h3> Q： 在什麼機會下，柔軟的葉子也會形成化石呢？</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）環境穩定</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）包埋的介質顆粒細密</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（C）以上皆是</button>
+			</div>
+			<p class="abreast-09"/>
+        </div>
+		<div id="question6" class="section black middle_line">
+            <h3> Q： 下列的四個選項中，哪一個不是直接被泥沙覆蓋，而形成的化石？</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）懸鈴木的葉片</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（B）琥珀中有隻昆蟲</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）劍鼻魚</button>
+			</div>
+			<p class="abreast-09"/><h2/>
+        </div>
+		
+		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-header">
+		  <p/>
+			<h4 id="myModalLabel">答錯囉!!</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>請回去教材再學習一次喔!!</p>
+		  </div>
+		  <div class="modal-footer">
+			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		  </div>
+		</div>
 	</div>
 	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-        <script>
-			var ans = []; //存放題號、答題對錯(1:對,0:錯)
-			var i = 0;
-			var timeOut;
-			function finish_click()
+    <script>
+		//data-toggle="modal" data-target="#fault_ans" 
+		var ans = []; //存放題號、答題對錯(1:對,0:錯)
+		var timearray = []; //用來存回答時間
+		var count = 2; //倒數的次數
+		var i = 0;
+		var timeOut;
+
+		<!--學習完教材按下「學習完成」扭-->
+		function finish_click()
+		{
+			today1 = new Date();
+			timearray[0]=today1.getHours();
+			timearray[1]=today1.getMinutes();
+			timearray[2]=today1.getSeconds();
+			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			if( i == 0 )
 			{
-				if( i == 0 )
-				{
-					var n = Math.floor(Math.random() * 2) + 1;
-					if( n == 1 ){
+				var n = Math.floor(Math.random() * 6) + 1;
+				switch(n){
+					case 1:
 						$("div#content").css("display","none");
 						$("div#question1").css("display","inline");
-					}
-					else{
+						//alert("1");
+						break;
+					case 2:
 						$("div#content").css("display","none");
 						$("div#question2").css("display","inline");
-					}
+						//alert("2");
+						break;
+					case 3:
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+						//alert("3");
+						break;
+					case 4:
+						$("div#content").css("display","none");
+						$("div#question4").css("display","inline");
+						//alert("4");
+						break;
+					case 5:
+						$("div#content").css("display","none");
+						$("div#question5").css("display","inline");
+						//alert("5");
+						break;
+					case 6:
+						$("div#content").css("display","none");
+						$("div#question6").css("display","inline");
+						//alert("6");
+						break;
 				}
-            }
-			function return_study()
-			{
-				if($("div#question1"))
-				{
-					ans[0] = "Q2-1";
-					ans[1] = 0;
-					alert("答錯了!!  請再學習一次!!");
-					$("div#question1").css("display","none");
-					$("div#question2").css("display","none");
-					$("div#content").css("display","inline");
-					i = i + 1;
-					count = 6;
-				}
-				else
-				{
-					ans[0] = "Q2-2";
-					ans[1] = 0;
-					alert("答錯了!!  請再學習一次!!");
-					$("div#question1").css("display","none");
-					$("div#question2").css("display","none");
-					$("div#content").css("display","inline");
-					i = i + 1;
-					count = 6;
-				}
-				ftime();
 			}
-			function ftime(){ time(); }
-			function time()
+		}
+			
+		<!--跳出答錯的alert視窗-->
+		function alertans()
+		{
+			today2 = new Date();
+			timearray[3]=today2.getHours();
+			timearray[4]=today2.getMinutes();
+			timearray[5]=today2.getSeconds();
+			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
+			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
+			//alert("回答時間:"+timearray[6]);
+			if($("div#question1"))
 			{
-					if (count == 0) {
-						$("input#fin_but").attr("disabled", false);
-						$("input#fin_but").val("學習完成");
-						i = 0;
-						clearTimeout(timeOut);
-					}
-					else {
-						count--;
-						$("input#fin_but").attr("disabled", "disabled");
-						$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
-						timeOut = setTimeout(time, 1000);
-					}
+				ans[0] = "Q2-1";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
 			}
-        </script>
-		
+			else if($("div#question2"))
+			{
+				ans[0] = "Q2-2";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question3"))
+			{
+				ans[0] = "Q2-3";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question4"))
+			{
+				ans[0] = "Q2-4";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question5"))
+			{
+				ans[0] = "Q2-5";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else{
+				ans[0] = "Q2-6";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+		   $("#fault_ans").modal({show:false});
+		}
+			
+		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
+		function return_study() 
+		{
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			$("div#question1").css("display","none");
+			$("div#question2").css("display","none");
+			$("div#question3").css("display","none");
+			$("div#question4").css("display","none");
+			$("div#question5").css("display","none");
+			$("div#question6").css("display","none");
+			$("div#fault_ans").css("display","none");
+			$("div#content").css("display","inline");	
+			i = i + 1;
+			count = 2;
+			ftime();
+		}
+		<!--按鈕倒數計時-->
+		function ftime(){ time(); }
+		function time()
+		{
+			if (count == 0) {
+				$("input#fin_but").attr("disabled", false);
+				$("input#fin_but").val("學習完成");
+				i = 0;
+				clearTimeout(timeOut);
+			}
+			else {
+				count--;
+				$("input#fin_but").attr("disabled", "disabled");
+				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+				timeOut = setTimeout(time, 1000);
+			}
+		}
+    </script>
+	
 </body>
 </html>
