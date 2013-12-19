@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>生命登上陸地</title>
+	<title>恐龍時代</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -17,7 +17,7 @@
 	
 	<!-- 套用自己的樣式 -->
 	<link href="css/01_style.css" rel="stylesheet" media="screen" />
-	<link href="css/Emobile_style.css" rel="stylesheet" media="handheld, screen and (max-width: 480px)" />
+	<link href="css/Umobile_style.css" rel="stylesheet" media="handheld, screen and (max-width: 480px)" />
 	
 	<!-- 舊版IE相容性 -->
 	<!-- 修正CSS相容性問題 -->
@@ -40,88 +40,68 @@
 		
 		<div id="content" class="con_total">
 			<div class="inner">
-				<article>
-					<h1>最早的森林</h1>
+				<article class="middle_line">
+					<h1><img src="picture/leaf.png" alt="葉">蒙古的恐龍</h1>
 				
-					<p>在三億五千萬年前和二億八千萬年前之間，濃密的熱帶森林分佈在亞洲、歐洲及北美洲的低窪沼澤區。
-					   當時當地的氣候溫暖而潮濕，一些新種的植物快速地成長並且極為高大。昆蟲在其中飛翔、飛行。
-					   蠍、蜈蚣及蜘蛛捕食昆蟲，植食性的馬陸在植株下潛行。這時期的有些古代之動物有巨大的體軀。</p>
-					 
-					<div class="middle_line">					 
-						<img class="pic_size_06 abreast-04 classname5" src="p-ering/06/B4_3.JPG" alt="B4_3">
-					</div>
-					
 					<p class="abreast-04"/>
 					
-					<hr/>
-					
-					<p class="abreast-04"/>
-					
-					<p class="question middle_line">
-						<img src="picture/Q.gif" alt="問題"> 
-						<strong>現今的煤層是怎麼形成的呢？</strong>
-					</p>
-					
-					<p>森林中的葉子和樹幹在沼澤中經歷了數百萬年的堆積，
-					   再加上壓力的作用，這些植物的殘留物便形成現今的煤層。
-					   因煤之主要成份為炭，這個地質年代便被稱之為石炭紀。</p>
-					<p class="emphasis">下圖為石炭紀的植物化石</p>
+					<p class="question"><img src="picture/q.png" alt="問題">亞洲有沒有出現過恐龍呢?</p>
+					<p class="umobile dis_top">分布在蒙古戈壁沙漠的小暴龍和特暴龍，是暴龍家族在亞洲的代表，也是白堊紀晚期的肉食性恐龍。
+											   特暴龍的體型比北美暴龍較小，全長約１２公尺左右。</p>
 
-					<figure>
-						<div class="middle_line">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B1.JPG" alt="B1">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B2.JPG" alt="B2">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B3.JPG" alt="B3">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B4.JPG" alt="B4">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B4_1.JPG" alt="B4_1">
-							<img class="pic_size_03 abreast-04 classname1" src="p-ering/06/B4_2.JPG" alt="B4_2">
-						</div>
-					</figure>
-				<p class="last_line"></p>
+					<p class="abreast-04"/><p class="abreast-04"/>
+					<br/>
+					
+					<p class="emphasis2"><img src="picture/D.gif" alt="想想"> 請仔細觀察展品，並回答問題！</p>
+					
+					<p class="abreast-04"/><p class="abreast-04"/>
+					<p class="last_line"></p>
+				
 				</article>			
-
+				
 				<div class="middle_line">
 					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
+				</div>
 				</div>
 				<p/>
 			</div>
 		</div>
 	
 		<div id="question1" class="section black middle_line">
-            <h3> Q： 因媒之主要成份為炭，這個地質年代便被稱之為？</h3>
+            <h3> Q： 下列選項中哪一種為「白堊紀晚期的肉食性恐龍」？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）白堊紀</button>
+				<button type="button" class="button_answer">(A) 小暴龍</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）侏羅紀</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 三角龍</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）以上皆非</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 長頸巨龍</button>
 			</div>
-			<p class="abreast-09"/><br/>
+			<p class="abreast-09"/>
         </div>
 		<div id="question2" class="section black middle_line">
-            <h3> Q： 在三億五千萬年前和二億八千萬年前之間，濃密的熱帶森林分佈哪裡的低窪沼澤區?</h3>
+            <h3> Q： 哪一種恐龍分布在蒙古戈壁沙漠是「暴龍家族在亞洲的代表」？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）亞洲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 劍龍</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）北美洲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 翼龍</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）歐洲</button>
-				<br/><br/>
-				<button type="button" class="button_answer">（D）以上皆是</button>
+				<button type="button" class="button_answer">(C) 特暴龍</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
 		<div id="question3" class="section black middle_line">
-            <h3> Q： 森林中的葉子和樹幹在沼澤中經歷了數百萬年的堆積，再加上壓力的作用，這些植物的殘留物便形成「現今的煤層」。</h3>
+            <h3> Q： 分布在蒙古戈壁沙漠是「暴龍家族在亞洲的代表」的小暴龍和特暴龍是屬於哪一紀？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）正確</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 侏儸紀晚期</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+				<button type="button" class="button_answer">(B) 白堊紀晚期</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 三疊紀晚期</button>
 			</div>
-			<p class="abreast-09"/><h2/><br/>
+			<p class="abreast-09"/>
         </div>
 		
 		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
@@ -134,7 +114,7 @@
 				<p>請回去教材再學習一次喔!!<p/>
 			  </div>
 			  <div class="modal-footer">
-				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+				<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
 			  </div>
 			</div>
 		  </div>
@@ -195,18 +175,19 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "4-1";
+				ans[0] = "7-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "4-2";
+				ans[0] = "7-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
-			else{
-				ans[0] = "4-3";
+			else
+			{
+				ans[0] = "7-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

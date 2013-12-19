@@ -43,8 +43,8 @@
 				<article>
 					<h1>恐龍再現</h1>
 				
-						<div class="middle_line abreast-05">
-							<img src="p-ering/10/C3.bmp" alt="C3">
+						<div class="middle_line">
+							<img class="pic_size_09" src="p-ering/10/C3.bmp" alt="C3">
 							<br/><br/>
 						</div>
 					<p>恐龍已在六千五百萬年前滅絕了。沒有人有機會看過活的恐龍，透過化石和各種科學的研究發現，
@@ -69,7 +69,7 @@
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
@@ -90,16 +90,19 @@
 			<p class="abreast-08"/>
         </div>
 
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>		
@@ -140,7 +143,7 @@
 			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
 			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
 			//alert("回答時間:"+timearray[6]);
-			ans[0] = "Q8-1";
+			ans[0] = "8-1";
 			ans[1] = 0;
 			$("#fault_ans").css("display","inline");
 		   $("#fault_ans").modal({show:false});

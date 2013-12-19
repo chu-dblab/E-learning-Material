@@ -13,7 +13,7 @@
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
 	
 	<!-- 清除預設樣式 -->
-	<link href="../assets/css/YUI-reset.css" rel="stylesheet" />
+	<link href="assets/css/YUI-reset.css" rel="stylesheet" />
 	
 	<!-- 套用自己的樣式 -->
 	<link href="css/01_style.css" rel="stylesheet" media="screen" />
@@ -51,8 +51,8 @@
 							<img class="pic_size_08 classname3" src="p-ering/18/E3.JPG" alt="人類留下的遺跡？">
 							<p class="question">
 							<img src="picture/Q.gif" alt="問題"> 
-							<strong>你能從這張圖禮找到人類的遺留嗎？</strong>
-					</p>
+							<strong>你能從這張圖裡找到人類的遺留嗎？</strong>
+							</p>
 						</div>
 
 					<p>人類演化的證據散佈在全世界各地的泥土裡。經年辛苦的工作，以及相當的運氣，使我們能夠找到這些線索，
@@ -63,10 +63,10 @@
 							<figcaption class="pic_name_nopadding">獸骨與遺留</figcaption>
 							<img class="pic_size_07 classname2 abreast-01" src="p-ering/18/E5_7.JPG" alt="獸骨與遺留">
 							<figcaption class="pic_dis">根據與尼安德塔人一起出現的長毛象及披毛犀遺骸
-														可以看出他們是在極為寒冷的冰河時期中過著打獵的生活。</figcaption>
+														可以看出他們是在極為寒冷的冰河時期中過著打獵的生活。(上圖)</figcaption>
 							<img class="pic_size_07 classname2 abreast-01" src="p-ering/18/E5_8.JPG" alt="獸骨與遺留">
 							<figcaption class="pic_dis">在周口店遺址，所發現的北京人及其獵獲的動物遺骸來看，
-														他們是生活在較溫暖的時代。</figcaption>
+														他們是生活在較溫暖的時代。(上圖)</figcaption>
 					</figure>
 					<div class="context2 abreast-05">
 							演化過程中，動物隨時都在適應其特定的環境，
@@ -113,21 +113,23 @@
 				
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
 		</div>
 	
 		<div id="question1" class="section black middle_line">
-            <h3> Q： 從周口店遺址所發現的遺骸可知道，當時的環境是屬於什麼樣的時代?</h3>
+            <h3> Q： 人類最早的工具相當粗糙，後來人類學會更好的方法將材料加工始之能為更有用的工具。複製古代的工具時可以得知哪些資訊呢?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）四季分明</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）花費的時間</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）寒冷</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）製作的技巧</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）溫暖</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）工具的效能</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（D）以上皆是</button>
 			</div>
 			<h3/><br/><br/>
         </div>
@@ -164,16 +166,19 @@
 			<p class="abreast-08"/><h3><br/><br/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -237,25 +242,25 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q13-1";
+				ans[0] = "13-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q13-2";
+				ans[0] = "13-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question3"))
 			{
-				ans[0] = "Q13-3";
+				ans[0] = "13-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else
 			{
-				ans[0] = "Q13-4";
+				ans[0] = "13-4";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

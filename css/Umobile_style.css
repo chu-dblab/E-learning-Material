@@ -10,7 +10,7 @@ body{
 }
 article{
 	margin: 0px auto;
-	width:80%;
+	width:95%;
 	padding-left:5.5%;
 	padding-right:5%;
 }
@@ -38,16 +38,23 @@ h3{
 	padding-left: 5%;
 	padding-bottom: 40px;
 }
-p{
-	font-size: 22px;
+h5{
+	font-size: 30px;
 	font-family: 微軟正黑體;
-	clear : left;
-	line-height: 33px;
-	padding-top: 10px;
-	margin-left: 6%;
-	margin-bottom: 2%;
 	font-weight: bold;
-
+	text-shadow:6px 4px 2px #f7ff63;
+	padding-bottom: 10px;
+	line-height: 110%;
+	margin-top: 10px;
+}
+p.umobile{
+	width: 100%;
+	font-size: 24px;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	line-height: 33px;
+	text-align: left;
+	padding-left: 6%;
 }
 ul{
 	font-size: 22px;
@@ -55,12 +62,17 @@ ul{
 	clear : left;
 	margin-left: 20px;
 }
-li{ 
-	line-height: 160%;
-	margin-left: 3%;
+ol{
+	margin: 0px auto;
+	padding-left: 4%;
+	font-size: 22px;
+	font-family: 微軟正黑體;
+	clear : left;
 	font-weight: bold;
 }
-
+li{
+	text-align: left;
+}
 figure{
 	font-family: 微軟正黑體;
 	font-size: 24px;
@@ -90,7 +102,7 @@ img.img05{
 	padding-left: 2%;
 	text-align: center;
 	width: 90%;
-	background-color: #EED5B7;
+	background-color: #FFFFBB;
 	line-height: 30px;
 	margin-left: 5%;
 }
@@ -107,7 +119,6 @@ img.img05{
 
 /*內容有問號的句子*/
 .question{
-	margin-top: 5px;
 	color: #c71585;
 	font-weight: bold;
 	line-height: 110%;
@@ -122,6 +133,15 @@ img.img05{
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
 	padding-top: 0px;
 	color: #da70d6;
+}
+.emphasis2{
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
+	padding-top: 0px;
+	margin: 0px auto;
+	color: #0000FF;
 }
 
 /*任何元件距離下邊界*/
@@ -168,44 +188,62 @@ img.img05{
 	line-height: 30px;
 }
 .pic_size_01{
-	width: 250px;
+	width: 90%;
     height: 200px;
 }
+.pic_size_02{
+	width: 90%;
+    height: 280px;
+}
 .pic_size_03{
-	width: 370px;
+	width: 80%;
     height: 300px;
 }
 .pic_size_05{
-	width: 250px;
-    height: 200px;
+	width: 90%;
+    height: auto;
 }
 .pic_size_06{
-	width: 500px;
+	width: 100%;
     height: 200px;
 }
 .pic_size_07{
 	width: 300px;
-    height: 320px;
+	height: 320px;
+	max-width: 95%;
+    max-height: 320px;
 }
 .pic_size_08{
-	width: 350px;
-    height: 280px;
+	width: 90%;
+	height: auto;
+	max-width: 350px;
+    max-height: 280px;
 }
 .pic_size_09{
-	width: 350px;
-    height: 210px;
+	width: 85%;
+    height: 280px;
+	max-width: 350px;
+	max-height: 210px;
 }
 .pic_size_10{
 	width: 170px;
     height: 320px;
 }
 .pic_size_11{
-	width: 450px;
-    height:270px;
+	max-width: 450px;
+    max-height: 270px;
+	width: 100%;
+	height: auto;
 }
 .pic_size_12{
-	width: 500px;
-    height:200px;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+    max-height: 200px;
+}
+.pic_size_13{
+	width: 100%;
+    height: 450px;
 }
 
 /*圖片描述*/
@@ -235,7 +273,7 @@ img.img05{
 	display: inline;
 }
 .abreast-04{
-	padding-bottom: 14px;
+	padding-bottom: 0px;
 }
 .abreast-05{
 	margin-left: 3%;
@@ -247,6 +285,10 @@ img.img05{
 }
 .abreast-08{
 	margin-bottom: 18%;
+}
+.abreast-12{
+	text-align: left;
+	padding-left: 4%;
 }
 
 .classname1{

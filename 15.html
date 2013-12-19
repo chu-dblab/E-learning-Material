@@ -81,7 +81,7 @@
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
@@ -132,16 +132,19 @@
 			<p class="abreast-08"/><h3><br/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -205,25 +208,25 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q15-1";
+				ans[0] = "15-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q15-2";
+				ans[0] = "15-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question3"))
 			{
-				ans[0] = "Q15-3";
+				ans[0] = "15-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else
 			{
-				ans[0] = "Q15-4";
+				ans[0] = "15-4";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

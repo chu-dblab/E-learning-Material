@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>古代的兩棲類</title>
+	<title>人類的過去</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -16,7 +16,7 @@
 	<link href="assets/css/YUI-reset.css" rel="stylesheet" />
 	
 	<!-- 套用自己的樣式 -->
-	<link href="css/02_style.css" rel="stylesheet" media="screen" />
+	<link href="css/01_style.css" rel="stylesheet" media="screen" />
 	<link href="css/Umobile_style.css" rel="stylesheet" media="handheld, screen and (max-width: 480px)" />
 	
 	<!-- 舊版IE相容性 -->
@@ -40,40 +40,235 @@
 		
 		<div id="content" class="con_total">
 			<div class="inner">
-				<article>
-					<h1>古代的兩棲類</h1>
-				
-					<p>從水中登上陸地可能是脊椎動物演化的里程碑。
-					   然而，我們對於這一段的演化過程卻所知不多。
-					   幸好有關古代兩棲類的新發現才讓我們有進一步的瞭解。</p>
+				<article class="middle_line">
+					<h1>探討人類的過去</h1>
 					
-					<figure>
-						<img class="pic_size_01 classname" src="p-ering/07/B6.bmp" alt="樹蜥螈的重建模型">
-						<figcaption class="pic_name">樹蜥螈的重建模型</figcaption>
-						<img class="pic_size_01 classname" src="p-ering/08/B7.bmp" alt="樹蜥螈的化石模型三億四千萬年前">
-						<figcaption>
-							<div class="pic_name_nopadding">盤蜥螈的化石</div>
-							<div class="pic_dis">距今兩億七千萬年前</div>
-						</figcaption>
-					</figure>
+					<p class="umobile">地殼的版塊運動，在非洲東部逐漸形成了大裂谷，不但大幅改變地形，也改變了氣候與生態。
+					   住在裂谷西邊的猿類，繼續在雨林裡生活；裂谷東邊的森林面積縮小，有些猿類適應了較乾燥而開闊的草原環境，
+					   而演化出兩足行走，成為人類的祖先。</p>
+					   
+						<p class="question"><img src="picture/b.png" alt="觀察">觀察眼前的模型，試試看能能否從裡面找到人類的遺留！</p>
+					
+					<p class="abreast-04"/>
+					
+					<p class="question"><img src="picture/q.png" alt="問題">我們能從哪方面了解人類的過去呢?</p>
+					
+					<h5>獸骨與遺留</h5>
+					<ol>
+						<li class="Ulicontext"><span class="glyphicon glyphicon-tree-conifer"></span>
+							演化過程中，動物隨時都在適應其特定的環境，
+							因此從牠們的遺骸中，可以提示當時該地區的氣候。</li>
+						<li class="Ulicontext"><span class="glyphicon glyphicon-tree-conifer"></span>
+							可從考古遺址出土的動物遺骨來鑑定是野生的或是畜養的，
+							同種家畜動物往往比野生者小且輕。
+							這方面的鑑定可幫助我們推算人類何時開始飼養動物為食。</li>
+					</ol>
+					
+					<h5>工具</h5>
+					<p>複製古代的工具時可以得知當初所花費的時間，製作的技巧以及工具的效能。</p>
 
-					<p class="last_line">這具盤蜥螈化石已有二億七千萬年之久，它屬於後來演化成爬蟲類的古老兩棲類之一。
-										 它與較大的西蠓螈是近親。</p>
-				</article>
+								
+					<h5>藝術</h5>
+					<p class="umobile">幾萬年前祖先所遺留下來的洞人繪畫，包括有奇怪的半人伴獸像。
+									   這些古代的壁畫說明了人類有史以來，便具有與動物界相關連的信仰。</p>
+					
+					<p class="abreast-04"/><p class="abreast-04"/>
+					<p class="abreast-04"/><p class="abreast-04"/>
+					
+					<p class="emphasis2"><img src="picture/D.gif" alt="想想"> 請仔細觀察展品，並回答問題！</p>
+					<p class="last_line"></p>
+					
+				</article>			
+				
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 人類最早的工具相當粗糙，後來人類學會更好的方法將材料加工始之能為更有用的工具。
+					 複製古代的工具時可以得知哪些資訊呢?</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）花費的時間</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）製作的技巧</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）工具的效能</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（D）以上皆是</button>
+			</div>
+			<h3/><br/><br/>
+        </div>
+		<div id="question2" class="section black middle_line">
+            <h3> Q： 截至目前為止，專家們還是無法從考古遺址出土的動物遺骨來鑑定是野生的還是畜養的。</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）正確</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（B）不正確</button>
+			</div>
+			<p class="abreast-08"/><h3><br/>
+        </div>
+		<div id="question3" class="section black middle_line">
+            <h3> Q： 我們可以從古代的壁畫了解人類具有與動物界相關連的信仰。</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">（A）正確</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+			</div>
+			<p class="abreast-08"/><h3><br/><br/>
+        </div>
+		<div id="question4" class="section black middle_line">
+            <h3> Q： 從動物遺骸可以了解過去的?</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）氣候</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）食物來源</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（C）以上皆是</button>
+			</div>
+			<p class="abreast-08"/><h3><br/><br/>
+        </div>
+		
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script>
+		//data-toggle="modal" data-target="#fault_ans" 
+		var ans = []; //存放題號、答題對錯(1:對,0:錯)
+		var timearray = []; //用來存回答時間
+		var count = 2; //倒數的次數
+		var i = 0;
+		var timeOut;
 
+		<!--學習完教材按下「學習完成」扭-->
+		function finish_click()
+		{
+			today1 = new Date();
+			timearray[0]=today1.getHours();
+			timearray[1]=today1.getMinutes();
+			timearray[2]=today1.getSeconds();
+			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			if( i == 0 )
+			{
+				var n = Math.floor(Math.random() * 4) + 1;
+				switch(n){
+					case 1:
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+						//alert("1");
+						break;
+					case 2:
+						$("div#content").css("display","none");
+						$("div#question2").css("display","inline");
+						//alert("2");
+						break;
+					case 3:
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+						//alert("3");
+						break;
+					case 4:
+						$("div#content").css("display","none");
+						$("div#question4").css("display","inline");
+						//alert("4");
+						break;
+				}
+			}
+		}
+			
+		<!--跳出答錯的alert視窗-->
+		function alertans()
+		{
+			today2 = new Date();
+			timearray[3]=today2.getHours();
+			timearray[4]=today2.getMinutes();
+			timearray[5]=today2.getSeconds();
+			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
+			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
+			//alert("回答時間:"+timearray[6]);
+			if($("div#question1"))
+			{
+				ans[0] = "13-1";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question2"))
+			{
+				ans[0] = "13-2";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question3"))
+			{
+				ans[0] = "13-3";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else
+			{
+				ans[0] = "13-4";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+		   $("#fault_ans").modal({show:false});
+		}
+			
+		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
+		function return_study() 
+		{
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			$("div#question1").css("display","none");
+			$("div#question2").css("display","none");
+			$("div#question3").css("display","none");
+			$("div#question4").css("display","none");
+			$("div#fault_ans").css("display","none");
+			$("div#content").css("display","inline");	
+			i = i + 1;
+			count = 2;
+			ftime();
+		}
+		<!--按鈕倒數計時-->
+		function ftime(){ time(); }
+		function time()
+		{
+			if (count == 0) {
+				$("input#fin_but").attr("disabled", false);
+				$("input#fin_but").val("學習完成");
+				i = 0;
+				clearTimeout(timeOut);
+			}
+			else {
+				count--;
+				$("input#fin_but").attr("disabled", "disabled");
+				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+				timeOut = setTimeout(time, 1000);
+			}
+		}
+    </script>
+	
 </body>
 </html>

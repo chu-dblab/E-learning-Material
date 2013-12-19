@@ -4,49 +4,27 @@ header {
 	width:90%;
 }
 body{
-	/*背景漸層*/
-	background: 
-		rgba(168,250,250,1);
-	/*FireFox的語法*/
-	background: 
-		-moz-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
-	/*Chrome的語法*/
-	background: 
-		-webkit-gradient(left top, left bottom, color-stop(0%, rgba(168,250,250,1)), color-stop(44%, rgba(212,234,247,1)), color-stop(68%, rgba(213,183,235,1)), color-stop(86%, rgba(167,88,240,1)), color-stop(100%, rgba(77,71,245,1)));
-	background: 
-		-webkit-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
-	/* Opera 11.10+ */
-	background: 
-		-o-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
-	/*IE6~IE8的語法*/
-	background: 
-		-ms-linear-gradient(top, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
-	background: 
-		linear-gradient(to bottom, rgba(168,250,250,1) 0%, rgba(212,234,247,1) 44%, rgba(213,183,235,1) 68%, rgba(167,88,240,1) 86%, rgba(77,71,245,1) 100%);
-	filter: 
-		progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fafa', endColorstr='#4d47f5', GradientType=0 );
-		
-	/*背景外框*/
-	border: groove 9px #8d92eb;
-			-moz-border-radius-topleft: 14px;
-			-moz-border-radius-topright:14px;
-			-moz-border-radius-bottomleft:14px;
-			-moz-border-radius-bottomright:13px;
-			-webkit-border-top-left-radius:14px;
-			-webkit-border-top-right-radius:14px;
-			-webkit-border-bottom-left-radius:14px;
-			-webkit-border-bottom-right-radius:13px;
-			border-top-left-radius:14px;
-			border-top-right-radius:14px;
-			border-bottom-left-radius:14px;
-			border-bottom-right-radius:13px;
-			
-	-moz-background-size: 100% 100%;
-	background-size: 100% 100%;
+	background: #000 url(../picture/08.jpg);
+	background-repeat: repeat; 
+
+    border:dashed 5px #f23d7c;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
 }
 article{
 	margin: 0px auto;
-	width:80%;
+	width:95%;
 	padding-left:5.5%;
 	padding-right:5%;
 }
@@ -66,24 +44,23 @@ h3{
 	font-size: 38px;
 	font-family: 微軟正黑體;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
 	text-shadow: 4px 4px 3px hsla(240, 80%, 50%, 0.3);
 	margin-top: 80px;
 	line-height: 110%;
 	width: 80%;
-	padding-left: 5%;
 	padding-bottom: 40px;
 }
 p{
+	margin: 0px auto;
+	width: 100%;
 	font-size: 24px;
 	font-family: 微軟正黑體;
-	clear : left;
-	line-height: 33px;
-	padding-top: 10px;
-	margin-left: 6%;
-	margin-bottom: 2%;
 	font-weight: bold;
-
+	line-height: 33px;
+	text-align: left;
+	padding-left: 3%;
+	padding-right: 0px;
 }
 figure{
 	font-family: 微軟正黑體;
@@ -91,6 +68,7 @@ figure{
 	margin: 20px;
 	font-weight: bold;
 	text-align: center;
+	margin-left: 9%;
 }
 figcaption{
 	margin-top: 10px;
@@ -109,6 +87,16 @@ img{
 img.img05{
 	margin-top: 5%;
 }
+ol{
+	font-size: 22px;
+	font-family: 微軟正黑體;
+	clear : left;
+	margin: 15px;
+	margin-left: 10%;
+	font-weight: bold;
+	width: 90%;
+}
+
 .context_center{
 	font-size: 22px;
 	padding-left: 2%;
@@ -191,45 +179,64 @@ img.img05{
 	line-height: 30px;
 }
 .pic_size_01{
-	width: 250px;
+	width: 90%;
     height: 200px;
 }
+.pic_size_02{
+	width: 90%;
+    height: 280px;
+}
 .pic_size_03{
-	width: 370px;
+	width: 80%;
     height: 300px;
 }
 .pic_size_05{
-	width: 250px;
-    height: 200px;
+	width: 90%;
+    height: auto;
 }
 .pic_size_06{
-	width: 500px;
+	width: 100%;
     height: 200px;
 }
 .pic_size_07{
 	width: 300px;
-    height: 320px;
+	height: 320px;
+	max-width: 95%;
+    max-height: 320px;
 }
 .pic_size_08{
-	width: 350px;
-    height: 280px;
+	width: 90%;
+	height: auto;
+	max-width: 350px;
+    max-height: 280px;
 }
 .pic_size_09{
-	width: 350px;
-    height: 210px;
+	width: 85%;
+    height: 280px;
+	max-width: 350px;
+	max-height: 210px;
 }
 .pic_size_10{
 	width: 170px;
     height: 320px;
 }
 .pic_size_11{
-	width: 450px;
-    height:270px;
+	max-width: 450px;
+    max-height: 270px;
+	width: 100%;
+	height: auto;
 }
 .pic_size_12{
-	width: 500px;
-    height:200px;
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+    max-height: 200px;
 }
+.pic_size_13{
+	width: 100%;
+    height: 450px;
+}
+
 
 /*圖片描述*/
 .pic_dis{
@@ -408,3 +415,4 @@ img.img05{
 	position:relative;
 	top:1px;
 }
+

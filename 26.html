@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>生命先在水中演化</title>
+	<title>生命征服天空</title>
 	
 	<!--放網址小圖示-->
 	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
@@ -40,32 +40,232 @@
 		
 		<div id="content" class="con_total">
 			<div class="inner">
-				<article>
-					<h1>生命先在水中演化</h1>
+				<article class="middle_line">
+					<h1>始 祖 鳥</h1>
+				
+					<p class="abreast-04"/>
+				
+					<p class="umobile dis_top">19世紀的科學家，在比較了恐龍和現生鳥類的後肢骨骼後，發現這兩種在外型上截然不同的動物，
+					   有許多相似之處，於是更大膽推論恐龍和鳥是有親緣關係的。</p>
+					   
+					<p class="question"><img src="picture/q.png" alt="問題">為什麼始祖鳥是「鳥類」？</p>
+					
+					<p class="umobile dis_top">1861年，在德國索倫霍芬發現了一隻披有羽毛的小型恐龍化石。這隻體型像一隻鴿子的化石，口中長有尖牙，
+					   批有羽毛的前肢和後肢的長度差不多，前肢長有利爪，還有相當完整堅挺的尾巴。由於留在化石上的<strong class="other">羽毛</strong>印痕，
+					   證明了恐龍與鳥演化途徑的關聯性，於是便以「始祖鳥」命名之。</p>
 
-					<p class="last_line">生命登陸前數億年，已有許多生物棲息水中。其中如三葉蟲已滅絕，但有些仍然生存迄今，且外型僅些微差異。</p>
-					</p>
-					</p>
-					</p>
-					</p>
-					</p>
+					<p class="abreast-04"/><p class="abreast-04"/>	
+					
+					<hr/>
+					
+					<h1>來自中國帶有羽毛的恐龍</h1>
+				
+					<p class="umobile dis_top">來自中國帶有羽毛的恐龍─到了90年代，更多的研究支持鳥起源自小型肉食性恐龍的想法，如果這想法是正確的話，
+					   在這類恐龍演化到鳥的過程中，應該會有一些帶有羽毛的中間類型吧！</p>
+					   
+					<p class="question"><img src="picture/q.png" alt="問題">這種中間類型真的存在嗎？</p>
+					
+					<p class="umobile dis_top">支持這種想法的重要證據終於在1996年之後，陸續在中國東北的遼寧省發現。最早發現的一種稱為「中國龍鳥」的小型肉食性恐龍，
+					   其背部長有稠密的絨毛。稍後在「尾羽龍」及「原始組鳥」的化石上，已看到與現生鳥類相似的真羽；
+					   還有1999年的「千禧中國鳥龍」及2003年的「四翼恐龍」(顧氏小盜龍)等一系列的化石發現，為鳥類源自恐龍論點提出強而有利的證據。</p>
+					<p class="umobile dis_top">雖然有眾多的化石與理論支持，但仍有少部分科學家認為鳥和帶毛恐龍是因為有相近的生活方式，所以才都長有羽毛。
+					   這一群科學家更已BAND(Birds Are Not Dinosaurs)，「鳥不是恐龍」一名自居。</p>
+
+					<p class="abreast-04"/><p class="abreast-04"/>
+					
+					<p class="emphasis2"><img src="picture/D.gif" alt="想想"> 請仔細觀察展品，並回答問題！</p>
 					<p class="last_line"></p>
-					<p class="last_line"></p>
-				</article>
+					
+				</article>			
 				
 				<div class="middle_line">
-					<button type="button" class="btn btn-warning">學習完成</button>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
+				<p/>
 			</div>
 		</div>
 	
-		<footer>
-			
-		</footer>
+		<div id="question1" class="section black middle_line">
+            <h3> Q： 我們是藉由什麼來判斷「始祖鳥」是屬於鳥類？</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">(A) 羽毛</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 尾巴</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 尖牙</button>
+			</div>
+			<h3/><br/><br/>
+        </div>
+		<div id="question2" class="section black middle_line">
+            <h3> Q： 始祖鳥約生活於147百萬年前，分別具有一些屬於恐龍及鳥類的特徵，因此科學家推論恐龍是由鳥類演化來的。上列敘述的內容</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）正確</button>
+				<br/><br/>
+				<button type="button" class="button_answer">（B）不正確</button>
+			</div>
+			<h3/><h3/>
+        </div>
+		<div id="question3" class="section black middle_line">
+            <h3> Q： 支持「鳥起源自小型肉食性恐龍」的想法的重要證據終於在1996年之後，陸續在中國東北的遼寧省發現。最早發現的一種稱為</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" class="button_answer">(A) 中國龍鳥</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 尾羽龍</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 原始組鳥</button>
+			</div>
+			<h3/><br/>
+        </div>
+		<div id="question4" class="section black middle_line">
+            <h3> Q： 1999年及2003年分別被發現的哪一種恐龍和四翼恐龍的化石，為鳥類源自恐龍論點提出強而有利的證據？</h3>
+			<br/>
+			<div class="middle_line">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 中國龍鳥</button>
+				<br/><br/>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 尾羽龍</button>
+				<br/><br/>
+				<button type="button" class="button_answer">(C) 千禧中國鳥龍</button>
+			</div>
+			<h3/><br/>
+        </div>
+		
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</div>
 	
-		<script src="../jQuery/jquery.js"></script>
-		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
+    <script>
+		//data-toggle="modal" data-target="#fault_ans" 
+		var ans = []; //存放題號、答題對錯(1:對,0:錯)
+		var timearray = []; //用來存回答時間
+		var count = 2; //倒數的次數
+		var i = 0;
+		var timeOut;
+
+		<!--學習完教材按下「學習完成」扭-->
+		function finish_click()
+		{
+			today1 = new Date();
+			timearray[0]=today1.getHours();
+			timearray[1]=today1.getMinutes();
+			timearray[2]=today1.getSeconds();
+			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			if( i == 0 )
+			{
+				var n = Math.floor(Math.random() * 4) + 1;
+			n=2;
+				switch(n){
+					case 1:
+						$("div#content").css("display","none");
+						$("div#question1").css("display","inline");
+						//alert("1");
+						break;
+					case 2:
+						$("div#content").css("display","none");
+						$("div#question2").css("display","inline");
+						//alert("2");
+						break;
+					case 3:
+						$("div#content").css("display","none");
+						$("div#question3").css("display","inline");
+						//alert("3");
+						break;
+					case 4:
+						$("div#content").css("display","none");
+						$("div#question4").css("display","inline");
+						//alert("4");
+						break;
+				}
+			}
+		}
+			
+		<!--跳出答錯的alert視窗-->
+		function alertans()
+		{
+			today2 = new Date();
+			timearray[3]=today2.getHours();
+			timearray[4]=today2.getMinutes();
+			timearray[5]=today2.getSeconds();
+			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
+			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
+			//alert("回答時間:"+timearray[6]);
+			if($("div#question1"))
+			{
+				ans[0] = "11-1";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question2"))
+			{
+				ans[0] = "11-2";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else if($("div#question3"))
+			{
+				ans[0] = "11-3";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+			else
+			{
+				ans[0] = "11-4";
+				ans[1] = 0;
+				$("#fault_ans").css("display","inline");
+			}
+		   $("#fault_ans").modal({show:false});
+		}
+			
+		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
+		function return_study() 
+		{
+			$('html, body').scrollTop(0); //捲軸回到0的位置
+			$("div#question1").css("display","none");
+			$("div#question2").css("display","none");
+			$("div#question3").css("display","none");
+			$("div#question4").css("display","none");
+			$("div#fault_ans").css("display","none");
+			$("div#content").css("display","inline");	
+			i = i + 1;
+			count = 2;
+			ftime();
+		}
+		<!--按鈕倒數計時-->
+		function ftime(){ time(); }
+		function time()
+		{
+			if (count == 0) {
+				$("input#fin_but").attr("disabled", false);
+				$("input#fin_but").val("學習完成");
+				i = 0;
+				clearTimeout(timeOut);
+			}
+			else {
+				count--;
+				$("input#fin_but").attr("disabled", "disabled");
+				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
+				timeOut = setTimeout(time, 1000);
+			}
+		}
+    </script>
 
 </body>
 </html>

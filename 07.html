@@ -49,7 +49,7 @@
 							<figcaption class="pic_name_nopadding dis_top">美國自然史博物館於20年代及90年代在蒙古進行恐龍發掘的地點</figcaption>
 						</div>
 					</figure>
-				
+					<p/>
 					<p>分布在蒙古戈壁沙漠的小暴龍和特暴龍，是暴龍家族在亞洲的代表，也是白堊紀晚期的肉食性恐龍。
 					   特暴龍的體型比北美暴龍較小，全長約１２公尺左右。</p>
 
@@ -57,13 +57,13 @@
 					   此外，在戈壁發現的恐龍化石，大都屬於白堊紀晚期。 </p>
 					<p/>
 					<figure>
-						<img class="pic_size_09 classname3 dis_top" src="p-ering/09/C2_1.jpg" alt="C2_1">
+						<img class="pic_size_09 classname3" src="p-ering/09/C2_1.jpg" alt="C2_1">
 						<figcaption>
 							<div class="pic_name_nopadding dis_top">小暴龍骨架</div>
 						</figcaption>
 					</figure>
 					<figure>
-						<img class="classname3" src="p-ering/09/C1.png" alt="C1">
+						<img class="pic_size_09 classname3" src="p-ering/09/C1.png" alt="C1">
 						<figcaption>
 							<div class="pic_name_nopadding dis_top">特暴龍頭骨原件標本</div>
 							<div class="pic_dis">發掘於蒙古晚白堊紀地層</div>
@@ -74,7 +74,8 @@
 				<p class="last_line"></p>
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
+				</div>
 				</div>
 				<p/>
 			</div>
@@ -117,16 +118,19 @@
 			<p class="abreast-09"/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -185,19 +189,19 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q7-1";
+				ans[0] = "7-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q7-2";
+				ans[0] = "7-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else
 			{
-				ans[0] = "Q7-3";
+				ans[0] = "7-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

@@ -77,18 +77,21 @@
 						<img class="pic_size_10 abreast-10 classname2 abreast-04" src="p-ering/16/D3_2.jpg" alt="中華龍鳥">
 						<figcaption class="pic_name dis_top">中華龍鳥</figcaption>
 					</figure>
+					<p/>
 					<figure>
 						<img class="pic_size_10 abreast-10 classname2 abreast-04" src="p-ering/16/D4_1.JPG" alt="聖賢孔子鳥">
 						<img class="pic_size_10 abreast-10 classname2 abreast-04" src="p-ering/16/D4_2.JPG" alt="聖賢孔子鳥">
 						<figcaption class="pic_name dis_top">聖賢孔子鳥</figcaption>
 					</figure>
+					<p/>
 					<figure>
-						<img class="pic_size_08 abreast-10 abreast-04" src="p-ering/16/D5_1.jpg" alt="鄒氏尾羽龍">
+						<img class="pic_size_08 abreast-10 abreast-04 classname2" src="p-ering/16/D5_1.jpg" alt="鄒氏尾羽龍">
 						<img class="pic_size_10 abreast-10 classname2" src="p-ering/16/D5_2.jpg" alt="鄒氏尾羽龍">
 						<figcaption class="pic_name dis_top">鄒氏尾羽龍</figcaption>
 					</figure>
+					<p/>
 					<figure>
-						<img class="pic_size_08 abreast-10 abreast-04" src="p-ering/16/D2_1.JPG" alt="千禧中國鳥龍">
+						<img class="pic_size_08 abreast-10 abreast-04 classname2" src="p-ering/16/D2_1.JPG" alt="千禧中國鳥龍">
 						<img class="pic_size_10 abreast-10 classname2" src="p-ering/16/D2_2.JPG" alt="千禧中國鳥龍">
 						<figcaption class="pic_name dis_top">千禧中國鳥龍</figcaption>
 					</figure>
@@ -110,7 +113,7 @@
 				</article>			
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
@@ -163,16 +166,19 @@
 			<h3/><br/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -237,25 +243,25 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q11-1";
+				ans[0] = "11-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q11-2";
+				ans[0] = "11-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question3"))
 			{
-				ans[0] = "Q11-3";
+				ans[0] = "11-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else
 			{
-				ans[0] = "Q11-4";
+				ans[0] = "11-4";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

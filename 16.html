@@ -56,17 +56,18 @@
 					   強調的是，須經自然作用而被保存下來的生物遺跡或遺骸即為化石。<br />也就是說：</p>
 					<p>
 						<ul class="ulcontext">
-							<li class="licontext"><i class="icon-leaf"></i>非自然形成，而是人為製造的，就不是化石。</li>
-							<li class="licontext"><i class="icon-leaf"></i>不論有沒有生物遺體存在。只要能証明某種古代生物曾經存在過均可稱為化石。</li>
+							<li><span class="glyphicon glyphicon-leaf"></span>非自然形成，而是人為製造的，就不是化石。</li>
+							<li><span class="glyphicon glyphicon-leaf"></span>不論有沒有生物遺體存在。
+																			  只要能証明某種古代生物曾經存在過均可稱為化石。</li>
 						</ul>
 					</p>
 					<p>因此化石包括：</p>
 					<p>
 						<ul class="ulcontext">
-							<li class="licontext"><i class="icon-leaf"></i>由生物遺體或遺骸形成的，稱為軀體化石。</li>
-							<li class="licontext"><i class="icon-leaf"></i>由生物的遺跡形成的，稱為生痕化石。
-																		   如樹葉的印痕、羽毛的印痕、動物的足印、糞便、巢穴，
-																		   甚至代謝產物均屬之。</li>
+							<li><span class="glyphicon glyphicon-leaf"></span>由生物遺體或遺骸形成的，稱為軀體化石。</li>
+							<li><span class="glyphicon glyphicon-leaf"></span>由生物的遺跡形成的，稱為生痕化石。
+																			  如樹葉的印痕、羽毛的印痕、動物的足印、糞便、巢穴，
+																			  甚至代謝產物均屬之。</li>
 						</ul>
 					</p>
 					<hr/>
@@ -79,11 +80,12 @@
 						<p>許多沉積岩含有生物的遺體，這些生物層層沉積在海底或河床上，然後又被後來的沉積物覆蓋並壓實。</p>			
 					</div>	
 					<h2/><h2/>
-					<p class="emphasis">請仔細觀察展品，並回答問題！</p>
+					<p class="emphasis2"><img src="picture/D.gif" alt="想想"> 請仔細觀察展品，並回答問題！</p>
+					<p class="last_line"></p>
 				</article>
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成"/>
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
@@ -193,16 +195,19 @@
 			<p class="abreast-08"/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -291,54 +296,54 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q1-1";
+				ans[0] = "1-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q1-2";
+				ans[0] = "1-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question3"))
 			{
-				ans[0] = "Q1-3";
+				ans[0] = "1-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question4"))
 			{
-				ans[0] = "Q1-4";
+				ans[0] = "1-4";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question5"))
 			{
-				ans[0] = "Q1-5";
+				ans[0] = "1-5";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question6"))
 			{
-				ans[0] = "Q1-6";
+				ans[0] = "1-6";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question7"))
 			{
-				ans[0] = "Q1-7";
+				ans[0] = "1-7";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question8"))
 			{
-				ans[0] = "Q1-8";
+				ans[0] = "1-8";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else{
-				ans[0] = "Q1-9";
+				ans[0] = "1-9";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}

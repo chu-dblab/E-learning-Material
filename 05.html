@@ -49,13 +49,13 @@
 					
 					<h2><img src="picture/leaf.png" alt="葉">樹蜥螈</h2>
 					<figure>
-							<img class="pic_size_01 classname1" src="p-ering/07/B6.bmp" alt="樹蜥螈的重建模型(1)">
+							<img class="pic_size_01 classname1 abreast-04" src="p-ering/07/B6.bmp" alt="樹蜥螈的重建模型(1)">
 							<img class="pic_size_01 classname1 img05" src="p-ering/07/B6_1.JPG" alt="樹蜥螈的重建模型(2)">
 							<figcaption class="pic_name fig">樹蜥螈的重建模型</figcaption>
 							<img class="pic_size_01 classname1" src="p-ering/07/B5.JPG" alt="樹蜥螈的化石模型三億四千萬年前">
 							<figcaption class="pic_name_nopadding fig">樹蜥螈的化石模型三億四千萬年前</figcaption>
 					</figure>
-
+					<p/>
 					<p>這是樹蜥螈的化石複製品，也是我們所知最完整最古老的陸生兩棲類的骨骼。
 					   再發現它之前，只從化石碎片中得知樹蜥螈的存在。
 					   其近親魚石蝝還是魚的模樣，而化石顯示樹蜥螈具有發育完全的四肢，已能適應陸地的生活。
@@ -66,12 +66,13 @@
 					<hr/>
 					<p/>
 					<h2><img src="picture/leaf.png" alt="葉">西蒙螈</h2>
+					<p/>
 					<figure>
 						<div class="middle_line">
-							<img class="pic_size_03 classname1" src="p-ering/08/B7_1.JPG" alt="西蒙螈">
+							<img class="pic_size_01 classname1" src="p-ering/08/B7_1.JPG" alt="西蒙螈">
 						</div>
 					</figure>
-
+					<p/>
 					<p>西蒙螈乃介於兩棲類與爬蟲類的一種動物。它兼具此兩種動物的特徵。
 					   兩棲類與爬蟲類主要的不同在於它門所產的卵，兩棲類必須把卵產在水中，爬蟲類則能產生有殼的卵。</p>
 					<p>我們並沒有直接的證據告訴我們西蒙螈產的是哪一種卵，但有一種近似西蒙螈的幼體曾被發現，
@@ -100,7 +101,7 @@
 				</article>
 				
 				<div class="middle_line">
-					<input id="fin_but" type="button" class="btn btn-danger btn btn-large" onClick="finish_click()" value="學習完成">
+					<input id="fin_but" type="button" class="btn btn-danger btn btn-lg" onClick="finish_click()" value="學習完成">
 				</div>
 				<p/>
 			</div>
@@ -175,16 +176,19 @@
 			<p class="abreast-09"/><h3/><br/>
         </div>
 		
-		<div id="fault_ans" class="alert_ans modal hide fade" role="dialog" data-backdrop="static" data-backdrop="true">
-		  <div class="modal-header">
-		  <p/>
-			<h4 id="myModalLabel">答錯囉!!</h4>
-		  </div>
-		  <div class="modal-body">
-			<p>請回去教材再學習一次喔!!</p>
-		  </div>
-		  <div class="modal-footer">
-			<button class="button_answer" data-dismiss="modal" onClick="return_study()">OK</button>
+		<div id="fault_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">答錯囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>請回去教材再學習一次喔!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="return_study()">OK</button>
+			  </div>
+			</div>
 		  </div>
 		</div>
 	</div>
@@ -258,37 +262,37 @@
 			//alert("回答時間:"+timearray[6]);
 			if($("div#question1"))
 			{
-				ans[0] = "Q5-1";
+				ans[0] = "5-1";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question2"))
 			{
-				ans[0] = "Q5-2";
+				ans[0] = "5-2";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question3"))
 			{
-				ans[0] = "Q5-3";
+				ans[0] = "5-3";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question4"))
 			{
-				ans[0] = "Q5-4";
+				ans[0] = "5-4";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else if($("div#question5"))
 			{
-				ans[0] = "Q5-5";
+				ans[0] = "5-5";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
 			else
 			{
-				ans[0] = "Q5-6";
+				ans[0] = "5-6";
 				ans[1] = 0;
 				$("#fault_ans").css("display","inline");
 			}
