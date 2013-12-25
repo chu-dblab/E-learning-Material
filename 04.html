@@ -91,11 +91,11 @@
             <h3> Q： 因媒之主要成份為炭，這個地質年代便被稱之為？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）白堊紀</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）白堊紀</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）侏羅紀</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）侏羅紀</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）以上皆非</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）以上皆非</button>
 			</div>
 			<p class="abreast-09"/><br/>
         </div>
@@ -103,13 +103,13 @@
             <h3> Q： 在三億五千萬年前和二億八千萬年前之間，濃密的熱帶森林分佈哪裡的低窪沼澤區?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）亞洲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）亞洲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）北美洲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）北美洲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）歐洲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）歐洲</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（D）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（D）以上皆是</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -117,9 +117,9 @@
             <h3> Q： 森林中的葉子和樹幹在沼澤中經歷了數百萬年的堆積，再加上壓力的作用，這些植物的殘留物便形成「現今的煤層」。</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）正確</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）正確</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）不正確</button>
 			</div>
 			<p class="abreast-09"/><h2/><br/>
         </div>
@@ -139,30 +139,42 @@
 			</div>
 		  </div>
 		</div>
+		<div id="correct_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">恭喜答對囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>前往下一個標的吧!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="learnFinish()">OK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</div>
 	
     <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
     <script>
 		//data-toggle="modal" data-target="#fault_ans" 
-		var ans = []; //存放題號、答題對錯(1:對,0:錯)
-		var timearray = []; //用來存回答時間
+		var ansQID = []; //存放題號
+		var ansCheck = []; //答題對錯(1:對,0:錯)
 		var count = 2; //倒數的次數
+		var n = 0;
 		var i = 0;
+		var j = 0;
 		var timeOut;
 
 		<!--學習完教材按下「學習完成」扭-->
 		function finish_click()
 		{
-			today1 = new Date();
-			timearray[0]=today1.getHours();
-			timearray[1]=today1.getMinutes();
-			timearray[2]=today1.getSeconds();
-			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
 			$('html, body').scrollTop(0); //捲軸回到0的位置
 			if( i == 0 )
 			{
-				var n = Math.floor(Math.random() * 3) + 1;
+				n = Math.floor(Math.random() * 3) + 1;
 				switch(n){
 					case 1:
 						$("div#content").css("display","none");
@@ -184,33 +196,25 @@
 		}
 			
 		<!--跳出答錯的alert視窗-->
-		function alertans()
+		function alertno()
 		{
-			today2 = new Date();
-			timearray[3]=today2.getHours();
-			timearray[4]=today2.getMinutes();
-			timearray[5]=today2.getSeconds();
-			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
-			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
-			//alert("回答時間:"+timearray[6]);
-			if($("div#question1"))
-			{
-				ans[0] = "4-1";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
+			$("#fault_ans").css("display","inline");
+			switch(n){
+				case 1:
+					ansQID[j] = "4-1";
+					ansCheck[j] = 0;
+					break;
+				case 2:
+					ansQID[j] = "4-2";
+					ansCheck[j] = 0;
+					break;
+				case 3:
+					ansQID[j] = "4-3";
+					ansCheck[j] = 0;
+					break;
 			}
-			else if($("div#question2"))
-			{
-				ans[0] = "4-2";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-			else{
-				ans[0] = "4-3";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-		   $("#fault_ans").modal({show:false});
+			j++;
+			$("#fault_ans").modal({show:false});
 		}
 			
 		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
@@ -224,6 +228,7 @@
 			$("div#content").css("display","inline");	
 			i = i + 1;
 			count = 2;
+			n = 0;
 			ftime();
 		}
 		<!--按鈕倒數計時-->
@@ -241,6 +246,33 @@
 				$("input#fin_but").attr("disabled", "disabled");
 				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
 				timeOut = setTimeout(time, 1000);
+			}
+		}
+		<!--跳出答對的alert視窗-->
+		function alertyes()
+		{
+			$("#fault_ans").css("display","inline");
+		}
+		
+		function learnFinish(){
+			//ansQID[j] = 題號, j = 0 ~ 答對的那題
+			//ansCheck[j] = 答題對錯, j = 0 ~ 答對的那題
+			switch(n){
+				case 1:
+					ansQID[j] = "4-1";
+					ansCheck[j] = 1;
+					break;
+				case 2:
+					ansQID[j] = "4-2";
+					ansCheck[j] = 1;
+					break;
+				case 3:
+					ansQID[j] = "4-3";
+					ansCheck[j] = 1;
+					break;
+			}
+			for( j = j ; j <= 0 ; j-- ){
+				Android.learnFinish(ansQID[j],ansCheck[j]);
 			}
 		}
     </script>

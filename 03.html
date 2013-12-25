@@ -69,13 +69,13 @@
 				<img class="pic_size_02 classname4" src="p-ering/question_pic/Q1.jpg" alt="Q1">
 			</div>
 			<div class="abreast-07">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_havepicture" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_havepicture" onClick="alertno()">
 					（A）<img class="pic_size_04" src="p-ering/question_pic/Q2.jpg" alt="Q3"></button>
 				<br/><br/>
-				<button type="button" class="button_answer_havepicture">
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer_havepicture" onClick="alertyes()">
 					（B）<img class="pic_size_04" src="p-ering/question_pic/Q3.jpg" alt="Q3"></button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_havepicture" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_havepicture" onClick="alertno()">
 					（C）<img class="pic_size_04" src="p-ering/question_pic/Q4.jpg" alt="Q4"></button>
 			</div>
         </div>
@@ -95,50 +95,57 @@
 			</div>
 		  </div>
 		</div>
-	</div>		
-
+		<div id="correct_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">恭喜答對囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>前往下一個標的吧!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="learnFinish()">OK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
     <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
     <script>
 		//data-toggle="modal" data-target="#fault_ans" 
-		var ans = []; //存放題號、答題對錯(1:對,0:錯)
-		var timearray = []; //用來存回答時間
+		var ansQID = []; //存放題號
+		var ansCheck = []; //答題對錯(1:對,0:錯)
 		var count = 2; //倒數的次數
+		var n = 0;
 		var i = 0;
+		var j = 0;
 		var timeOut;
 
 		<!--學習完教材按下「學習完成」扭-->
 		function finish_click()
 		{
-			today1 = new Date();
-			timearray[0]=today1.getHours();
-			timearray[1]=today1.getMinutes();
-			timearray[2]=today1.getSeconds();
-			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
 			$('html, body').scrollTop(0); //捲軸回到0的位置
-				if( i == 0 )
-				{
-					$("div#content").css("display","none");
-					$("div#question1").css("display","inline");
-				}
-        }
-		
-		<!--跳出答錯的alert視窗-->
-		function alertans()
-		{
-			today2 = new Date();
-			timearray[3]=today2.getHours();
-			timearray[4]=today2.getMinutes();
-			timearray[5]=today2.getSeconds();
-			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
-			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
-			//alert("回答時間:"+timearray[6]);
-			ans[0] = "3-1";
-			ans[1] = 0;
-			$("#fault_ans").css("display","inline");
-		   $("#fault_ans").modal({show:false});
+			if( i == 0 )
+			{
+				n = 1;
+				$("div#content").css("display","none");
+				$("div#question1").css("display","inline");
+			}
 		}
-		
+			
+		<!--跳出答錯的alert視窗-->
+		function alertno()
+		{
+			$("#fault_ans").css("display","inline");
+			ansQID[j] = "3-1";
+			ansCheck[j] = 0;
+			j++;
+			$("#fault_ans").modal({show:false});
+		}
+			
 		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
 		function return_study() 
 		{
@@ -165,6 +172,21 @@
 				$("input#fin_but").attr("disabled", "disabled");
 				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
 				timeOut = setTimeout(time, 1000);
+			}
+		}
+		<!--跳出答對的alert視窗-->
+		function alertyes()
+		{
+			$("#fault_ans").css("display","inline");
+		}
+		
+		function learnFinish(){
+			//ansQID[j] = 題號, j = 0 ~ 答對的那題
+			//ansCheck[j] = 答題對錯, j = 0 ~ 答對的那題
+			ansQID[j] = "3-1";
+			ansCheck[j] = 1;
+			for( j = j ; j <= 0 ; j-- ){
+				Android.learnFinish(ansQID[j],ansCheck[j]);
 			}
 		}
     </script>

@@ -121,13 +121,13 @@
             <h3> Q： 下列的四個選項中，哪一個是直接被泥沙覆蓋，而形成的化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）懷俄明梧桐</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）懷俄明梧桐</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）琥珀中有隻昆蟲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）琥珀中有隻昆蟲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）懸鈴木的葉片</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）懸鈴木的葉片</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（D）以上皆非</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（D）以上皆非</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -136,11 +136,11 @@
 				 包埋化石的物質叫「介質」，化石絕大部分是經沉積作用在岩石中被保存的，此外，保存化石的介質還有?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）樹上</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）樹上</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（B）焦油</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（B）焦油</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -148,18 +148,19 @@
             <h3> Q： 化石因沈積作用而形成的過程，其順序而者正確?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer_02html">（A）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer_02html" onClick="alertyes()">
+														    （A）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
 															 遺體被泥沙快速的覆蓋→柔軟組織被吃掉或被細菌分解腐爛掉，
 															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→地殼變動時，
 															 含有化石的岩層露出地表</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_02html" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_02html" onClick="alertno()">
 															（B）柔軟組織被吃掉或被細菌分解腐爛掉，
 															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→
 															 遺體被泥沙快速的覆蓋→生物的遺體被就地掩埋，或被搬運至海、
 															 湖或河底等→地殼變動時，含有化石的岩層露出地表</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_02html" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_02html" onClick="alertno()">
 															（C）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
 															 遺體被泥沙快速的覆蓋→地殼變動時，含有化石的岩層露出地表→
 															 柔軟組織被吃掉或被細菌分解腐爛掉，堅硬的部分如果很幸運地沒有被分解或破壞，
@@ -171,11 +172,11 @@
             <h3> Q： 下列何者是碎屑沈積岩形成的因素?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）壓力</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）壓力</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）溫度</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）溫度</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/><h2/><br/>
         </div>
@@ -183,11 +184,11 @@
             <h3> Q： 在什麼機會下，柔軟的葉子也會形成化石呢？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）環境穩定</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）環境穩定</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）包埋的介質顆粒細密</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）包埋的介質顆粒細密</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -195,11 +196,11 @@
             <h3> Q： 下列的四個選項中，哪一個不是直接被泥沙覆蓋，而形成的化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）懸鈴木的葉片</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）懸鈴木的葉片</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（B）琥珀中有隻昆蟲</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（B）琥珀中有隻昆蟲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）劍鼻魚</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）劍鼻魚</button>
 			</div>
 			<p class="abreast-09"/><h2/>
         </div>
@@ -219,31 +220,42 @@
 			</div>
 		  </div>
 		</div>
+		<div id="correct_ans" class="alert_ans modal fade" role="dialog" data-backdrop="static" data-backdrop="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">恭喜答對囉!!</h4>
+			  </div>
+			  <div class="modal-body">
+				<p>前往下一個標的吧!!<p/>
+			  </div>
+			  <div class="modal-footer">
+				<button class="button_answer_ok" data-dismiss="modal" onClick="learnFinish()">OK</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</div>
 	
     <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>	
     <script>
 		//data-toggle="modal" data-target="#fault_ans" 
-		var ans = []; //存放題號、答題對錯(1:對,0:錯)
-		var timearray = []; //用來存回答時間
+		var ansQID = []; //存放題號
+		var ansCheck = []; //答題對錯(1:對,0:錯)
 		var count = 2; //倒數的次數
+		var n = 0;
 		var i = 0;
+		var j = 0;
 		var timeOut;
 
 		<!--學習完教材按下「學習完成」扭-->
 		function finish_click()
 		{
-			today1 = new Date();
-			timearray[0]=today1.getHours();
-			timearray[1]=today1.getMinutes();
-			timearray[2]=today1.getSeconds();
-			//alert("小時:"+timearray[0]+" 分鐘:"+timearray[1]+" 秒:"+timearray[2]);
 			$('html, body').scrollTop(0); //捲軸回到0的位置
 			if( i == 0 )
 			{
-				var n = Math.floor(Math.random() * 6) + 1;
-				n=3;
+				n = Math.floor(Math.random() * 6) + 1;
 				switch(n){
 					case 1:
 						$("div#content").css("display","none");
@@ -280,51 +292,37 @@
 		}
 			
 		<!--跳出答錯的alert視窗-->
-		function alertans()
+		function alertno()
 		{
-			today2 = new Date();
-			timearray[3]=today2.getHours();
-			timearray[4]=today2.getMinutes();
-			timearray[5]=today2.getSeconds();
-			timearray[6]=(timearray[3]-timearray[0])*60+(timearray[4]-timearray[1])+(timearray[5]-timearray[2])/60; //總回答時間
-			//alert("小時:"+timearray[3]+" 分鐘:"+timearray[4]+" 秒:"+timearray[5]);
-			//alert("回答時間:"+timearray[6]);
-			if($("div#question1"))
-			{
-				ans[0] = "2-1";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
+			$("#fault_ans").css("display","inline");
+			switch(n){
+				case 1:
+					ansQID[j] = "2-1";
+					ansCheck[j] = 0;
+					break;
+				case 2:
+					ansQID[j] = "2-2";
+					ansCheck[j] = 0;
+					break;
+				case 3:
+					ansQID[j] = "2-3";
+					ansCheck[j] = 0;
+					break;
+				case 4:
+					ansQID[j] = "2-4";
+					ansCheck[j] = 0;
+					break;
+				case 5:
+					ansQID[j] = "2-5";
+					ansCheck[j] = 0;
+					break;
+				case 6:
+					ansQID[j] = "2-6";
+					ansCheck[j] = 0;
+					break;
 			}
-			else if($("div#question2"))
-			{
-				ans[0] = "2-2";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-			else if($("div#question3"))
-			{
-				ans[0] = "2-3";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-			else if($("div#question4"))
-			{
-				ans[0] = "2-4";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-			else if($("div#question5"))
-			{
-				ans[0] = "2-5";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-			else{
-				ans[0] = "2-6";
-				ans[1] = 0;
-				$("#fault_ans").css("display","inline");
-			}
-		   $("#fault_ans").modal({show:false});
+			j++;
+			$("#fault_ans").modal({show:false});
 		}
 			
 		<!--答錯跳出的alert按下OK時回到教材再學習一次-->
@@ -341,6 +339,7 @@
 			$("div#content").css("display","inline");	
 			i = i + 1;
 			count = 2;
+			n = 0;
 			ftime();
 		}
 		<!--按鈕倒數計時-->
@@ -358,6 +357,45 @@
 				$("input#fin_but").attr("disabled", "disabled");
 				$("input#fin_but").val("請再學習一次!!(" + count.toString() + ")");
 				timeOut = setTimeout(time, 1000);
+			}
+		}
+		<!--跳出答對的alert視窗-->
+		function alertyes()
+		{
+			$("#fault_ans").css("display","inline");
+		}
+		
+		function learnFinish(){
+			//ansQID[j] = 題號, j = 0 ~ 答對的那題
+			//ansCheck[j] = 答題對錯, j = 0 ~ 答對的那題
+			switch(n){
+				case 1:
+					ansQID[j] = "2-1";
+					ansCheck[j] = 1;
+					break;
+				case 2:
+					ansQID[j] = "2-2";
+					ansCheck[j] = 1;
+					break;
+				case 3:
+					ansQID[j] = "2-3";
+					ansCheck[j] = 1;
+					break;
+				case 4:
+					ansQID[j] = "2-4";
+					ansCheck[j] = 1;
+					break;
+				case 5:
+					ansQID[j] = "2-5";
+					ansCheck[j] = 1;
+					break;
+				case 6:
+					ansQID[j] = "2-6";
+					ansCheck[j] = 1;
+					break;
+			}
+			for( j = j ; j <= 0 ; j-- ){
+				Android.learnFinish(ansQID[j],ansCheck[j]);
 			}
 		}
     </script>
