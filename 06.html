@@ -349,10 +349,6 @@
 		<!--跳出答對的alert視窗-->
 		function alertyes()
 		{
-			$("#fault_ans").css("display","inline");
-		}
-		
-		function learnFinish(){
 			//ansQID[j] = 題號, j = 0 ~ 答對的那題
 			//ansCheck[j] = 答題對錯, j = 0 ~ 答對的那題
 			switch(n){
@@ -381,9 +377,12 @@
 					ansCheck[j] = 1;
 					break;
 			}
-			for( j = j ; j <= 0 ; j-- ){
-				Android.learnFinish(ansQID[j],ansCheck[j]);
-			}
+			$("#correct_ans").css("display","inline");
+		}
+		<!--答對的alert視窗按下OK後的動作-->
+		function learnFinish()
+		{
+			Android.learnFinish(ansQID,ansCheck);
 		}
     </script>
 

@@ -187,17 +187,16 @@
 		<!--跳出答對的alert視窗-->
 		function alertyes()
 		{
-			$("#fault_ans").css("display","inline");
-		}
-		
-		function learnFinish(){
 			//ansQID[j] = 題號, j = 0 ~ 答對的那題
 			//ansCheck[j] = 答題對錯, j = 0 ~ 答對的那題
 			ansQID[j] = "8-1";
 			ansCheck[j] = 1;
-			for( j = j ; j <= 0 ; j-- ){
-				Android.learnFinish(ansQID[j],ansCheck[j]);
-			}
+			$("#fault_ans").css("display","inline");
+		}
+		<!--答對的alert視窗按下OK後的動作-->
+		function learnFinish()
+		{
+			Android.learnFinish(ansQID,ansCheck);
 		}
     </script>
 
