@@ -95,11 +95,11 @@
             <h3> Q： 由生物遺跡形成的化石，稱為什麼化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）生痕化石</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）生痕化石</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）印痕化石</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）印痕化石</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）軀體化石</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）軀體化石</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -107,11 +107,11 @@
             <h3> Q： 由生物遺體或遺骸形成的，稱為什麼化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）生痕化石</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）生痕化石</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）印痕化石</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）印痕化石</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）軀體化石</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（C）軀體化石</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -119,9 +119,9 @@
             <h3> Q： 化石的定義強調的是必須經自然作用而被保存下來的生物遺跡或遺骸。</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）正確</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）正確</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）不正確</button>
 			</div>
 			<p class="abreast-09"/><h2/><br/>
         </div>
@@ -129,13 +129,13 @@
             <h3> Q： 下列有關化石的敘述，何者不正確？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 可以做為演化的證據</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(A) 可以做為演化的證據</button>
 				<br/><br/>
-				<button type="button" class="button_answer">(B) 只有動物的骨骼才會形成化石</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">(B) 只有動物的骨骼才會形成化石</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 化石的形成需要很久的時間</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(C) 化石的形成需要很久的時間</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(D) 化石多發現在沉積岩中</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(D) 化石多發現在沉積岩中</button>
 			</div>
 			<h3/>
         </div>
@@ -143,9 +143,9 @@
             <h3> Q： 不論有沒有生物遺體存在。只要能証明某種古代生物曾經存在過均可稱為化石。</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）正確</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）正確</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）不正確</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）不正確</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -153,44 +153,44 @@
             <h3> Q： 一定要有生物遺體存在才可稱為化石。</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）正確</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）正確</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（B）不正確</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">>（B）不正確</button>
 			</div>
 			<p class="abreast-09"/><h3/><br/>
         </div>
         <div id="question7" class="section white middle_line">
 			<h3> Q： 海百合其體桿由許多盤狀體節組成，請問下列何者與海百合同類？</h3>
 				<div class="middle_line">
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 海星</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(A) 海星</button>
 					<br/><br/>
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 海膽</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(B) 海膽</button>
 					<br/><br/>
-					<button type="button" class="button_answer">(C) 以上皆是</button>
+					<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">(C) 以上皆是</button>
 				</div>
 			<p class="abreast-09"/>
         </div>
 		<div id="question8" class="section white middle_line">
 			<h3> Q： 腹足類具有保護身體的螺殼且在腹部有行走用的腹足，我們比較熟悉的現生種是？</h3>
 				<div class="middle_line">
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(A) 海膽</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(A) 海膽</button>
 					<br/><br/>
-					<button type="button" class="button_answer">(B) 蛞蝓</button>
+					<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">(B) 蛞蝓</button>
 					<br/><br/>
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 以上皆非</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(C) 以上皆非</button>
 				</div>
 			<p class="abreast-09"/>
         </div>
 		<div id="question9" class="section white middle_line">
 			<h3> Q： 下列哪一種由銅、鐵及硫混合組成，一般俗稱"愚人金"？</h3>
 				<div class="middle_line">
-					<button type="button" class="button_answer">(A) 黃鐵礦</button>
+					<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">(A) 黃鐵礦</button>
 					<br/><br/>
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(B) 方鉛礦</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(B) 方鉛礦</button>
 					<br/><br/>
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(C) 釩鉛礦</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(C) 釩鉛礦</button>
 					<br/><br/>
-					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">(D) 閃鋅礦</button>
+					<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">(D) 閃鋅礦</button>
 				</div>
 			<p class="abreast-08"/>
         </div>

@@ -117,13 +117,13 @@
             <h3> Q： 下列的四個選項中，哪一個是直接被泥沙覆蓋，而形成的化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer">（A）懷俄明梧桐</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（A）懷俄明梧桐</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）琥珀中有隻昆蟲</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）琥珀中有隻昆蟲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）懸鈴木的葉片</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）懸鈴木的葉片</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（D）以上皆非</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（D）以上皆非</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -132,11 +132,11 @@
 				 包埋化石的物質叫「介質」，化石絕大部分是經沉積作用在岩石中被保存的，此外，保存化石的介質還有?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）樹上</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）樹上</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（B）焦油</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（B）焦油</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -144,18 +144,19 @@
             <h3> Q： 化石因沈積作用而形成的過程，其順序而者正確?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" class="button_answer_con">（A）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">
+														    （A）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
 															 遺體被泥沙快速的覆蓋→柔軟組織被吃掉或被細菌分解腐爛掉，
 															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→地殼變動時，
 															 含有化石的岩層露出地表</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_con" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">
 															（B）柔軟組織被吃掉或被細菌分解腐爛掉，
 															 堅硬的部分如果很幸運地沒有被分解或破壞，漸形成化石→
 															 遺體被泥沙快速的覆蓋→生物的遺體被就地掩埋，或被搬運至海、
 															 湖或河底等→地殼變動時，含有化石的岩層露出地表</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer_con" onClick="alertans()">
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">
 															（C）生物的遺體被就地掩埋，或被搬運至海、湖或河底等→
 															 遺體被泥沙快速的覆蓋→地殼變動時，含有化石的岩層露出地表→
 															 柔軟組織被吃掉或被細菌分解腐爛掉，堅硬的部分如果很幸運地沒有被分解或破壞，
@@ -167,11 +168,11 @@
             <h3> Q： 下列何者是形成化石的因素?</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）壓力</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）壓力</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）溫度</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）溫度</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/><h2/><br/>
         </div>
@@ -179,11 +180,11 @@
             <h3> Q： 在什麼機會下，柔軟的葉子也會形成化石呢？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）環境穩定</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）環境穩定</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（B）包埋的介質顆粒細密</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（B）包埋的介質顆粒細密</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（C）以上皆是</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（C）以上皆是</button>
 			</div>
 			<p class="abreast-09"/>
         </div>
@@ -191,11 +192,11 @@
             <h3> Q： 下列的四個選項中，哪一個不是直接被泥沙覆蓋，而形成的化石？</h3>
 			<br/>
 			<div class="middle_line">
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（A）懸鈴木的葉片</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（A）懸鈴木的葉片</button>
 				<br/><br/>
-				<button type="button" class="button_answer">（B）琥珀中有隻昆蟲</button>
+				<button type="button" data-toggle="modal" data-target="#correct_ans" class="button_answer" onClick="alertyes()">（B）琥珀中有隻昆蟲</button>
 				<br/><br/>
-				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertans()">（C）劍鼻魚</button>
+				<button type="button" data-toggle="modal" data-target="#fault_ans" class="button_answer" onClick="alertno()">（C）劍鼻魚</button>
 			</div>
 			<p class="abreast-09"/><h2/>
         </div>
